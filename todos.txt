@@ -1,0 +1,15 @@
+General
+ - main-menu - crează un meniu cu submeniuri
+             - add projects (Proiecte)
+             - add Descoperind Enigmele lui Daniel la Proiecte 
+ 
+ - Footer - link to Facebook 
+          - link to adventist.ro
+          - link to Speranța TV 
+          - main-menu links ( home, about, doctrine, more)
+
+
+1. Acasă - noile reguli cu privire la Covid-19
+         - showcase with links la despre noi, doctrine, Descoperind Enigmele lui Daniel, 
+           Apocalipsa Actualizată
+          

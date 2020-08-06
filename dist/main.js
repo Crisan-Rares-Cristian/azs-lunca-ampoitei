@@ -41,3 +41,5 @@ function selectItem(e) {
         showcase[i].firstElementChild.classList.remove('show');
       }
     }
+
+// Toggle Dark Theme
