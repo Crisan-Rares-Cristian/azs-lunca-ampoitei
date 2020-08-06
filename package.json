@@ -1,0 +1,15 @@
+{
+  "name": "azs-lunca-ampoitei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://Blackqwerty.github.io/azș-lunca-ampoiței",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
