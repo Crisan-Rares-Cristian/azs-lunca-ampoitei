@@ -1,7 +1,7 @@
 General
- - main-menu - crează un meniu cu submeniuri
+ onMobile {- main-menu - crează un meniu cu submeniuri
              - add projects (Proiecte)
-             - add Descoperind Enigmele lui Daniel la Proiecte 
+             - add Descoperind Enigmele lui Daniel la Proiecte }
  
  - Footer - link to Facebook 
           - link to adventist.ro

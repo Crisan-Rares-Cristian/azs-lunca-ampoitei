@@ -2,8 +2,33 @@ var mainBtnImg = document.getElementById("main-btn-img");
 var menu = document.getElementById("menu");
 var menuContent = document.getElementsByClassName("menu-item");
 var showcase = document.getElementsByClassName("showcase");
+// Vars for drop menu
+var dropBtn = document.getElementsByClassName("drop-btn");
+var dropContent = document.getElementsByClassName("drop-content");
 
-//Function that toogles the menu button
+
+// Loops throught the dropBtn HTML Collection
+for(let i = 0; i < dropBtn.length; i++) {
+// Listens for hover  
+  dropBtn[i].addEventListener('click', showContent);
+// Shows Content on click
+  function showContent() {
+    dropContent[i].classList.toggle("show");
+    }
+        // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.drop-btn')) {
+        if (dropContent[i].classList.contains('show')) {
+          dropContent[i].classList.remove('show');
+        }
+      }
+    }
+}
+
+
+
+
+//Function that toogles the menu button on mobile devices
 function toggle() {
   if (menu.style.maxHeight) {
     menu.style.maxHeight = null;
