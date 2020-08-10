@@ -2,6 +2,7 @@ General
  - main-menu - crează un meniu cu submeniuri
              - add projects (Proiecte)
              - add Descoperind Enigmele lui Daniel la Proiecte 
+             - add padding up and down in drop down content
  
  - Footer - link to Facebook 
           - link to adventist.ro
