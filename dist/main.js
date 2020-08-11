@@ -1,6 +1,6 @@
 var mainBtnImg = document.getElementById("main-btn-img");
 var menu = document.getElementById("menu");
-var menuContent = document.getElementsByClassName("menu-item");
+var menuItems = document.getElementsByClassName("menu-item");
 var showcase = document.getElementsByClassName("showcase");
 // Vars for drop menu
 var dropBtn = document.getElementsByClassName("drop-btn");
@@ -26,8 +26,6 @@ for(let i = 0; i < dropBtn.length; i++) {
 }
 
 
-
-
 //Function that toogles the menu button on mobile devices
 function toggle() {
   if (menu.style.maxHeight) {
@@ -40,13 +38,14 @@ function toggle() {
   }
 }
 
+
 /*show 1*/
 
   var i;
 
     // Show content when the corespondent link is clicked
-    for (i = 0; i < menuContent.length; i++) {
-      menuContent[i].addEventListener("click", selectItem);
+    for (i = 0; i < menuItems.length; i++) {
+      menuItems[i].addEventListener("click", selectItem);
     }
 function selectItem(e) {
   // Initialize Remove all content
