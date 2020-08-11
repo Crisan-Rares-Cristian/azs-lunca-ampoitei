@@ -23,6 +23,23 @@ body {
   text-align: center;
 }
 
+p {
+  font-size: 17px;
+  text-align: left;
+  text-indent: 15px;
+  margin-top: 12px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: rgb(105, 157, 209);
+}
+
+h3 {
+  margin-top: 30px;
+  color: dodgerblue;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -38,6 +55,31 @@ hr {
  color: #333;
 }
 
+.important {
+  color: rgba(125, 243, 255, 0.9);
+}
+
+
+/* Utility classes */
+.center {
+  text-align: center;
+}
+
+.op-08 {
+  opacity: 0.8;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.pl-12 {
+  margin-left: 12px;
+}
 
 /* Main Header  */
 #main-header {
@@ -134,8 +176,8 @@ hr {
   background-color: transparent;
 }
 
-#main-header #menu-container #menu a:hover {
-  padding-left: 0;
+#main-header #menu-container #menu a:first-child {
+  margin-left: 0;
 }
 
 #main-header #menu-container #menu a:hover {
@@ -175,6 +217,10 @@ hr {
 }
 
 /* Content */
+.welcome {
+  font-style: italic;
+  font-size: 18px;
+}
 
 .padding {
   color: white;
@@ -185,21 +231,24 @@ hr {
 }
 
 .padding p, .padding ul li {
-  text-align: center;
   z-index: 2;
 }
 
 /* Showcase */
 .showcase {
-  background: url(../poze/showcase.jpg) no-repeat center left/cover;
+  /* background: linear-gradient(to left,blue, dodgerblue); */
+  background: url(../poze/showcase.jpg);
+
 }
 
-.showcase p,.showcase h1, .showcase h2, .showcase h3, .showcase ul {
-  padding: 10px;
-  background-color: rgba(120, 120, 120, 0.7);
+/* Text content */
+.text-content {
+  width: 100%;
+  background-color: rgba(45, 45, 45, 0.9);
+  padding: 30px;
 }
 
-
+ 
 
 
 /* ul-s */
@@ -398,13 +447,20 @@ ul {
     padding-bottom: 0;
   }
 
-  /* Main Footer */
+  /* Text content */
+  .text-content {
+    width: 50%;
+    background-color: rgba(45, 45, 45, 0.9);
+    padding: 30px;
+  }
 
-  #main-footer .container {
-    grid-template-columns: 4fr 1fr;
-  } 
+    /* Main Footer */
 
-}
+    #main-footer .container {
+      grid-template-columns: 4fr 1fr;
+    } 
+
+  }
 
 @media(min-width:1000px) {
   #main-header #menu-container #menu a {
