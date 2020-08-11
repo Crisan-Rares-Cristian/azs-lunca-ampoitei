@@ -1,9 +1,12 @@
-General
-Menu
-             - add padding up and down in drop down content
+
+Global 
+ Accesibility settings: - increase text size
 
 
-1. Acasă - noile reguli cu privire la Covid-19
-         - showcase with links la despre noi, doctrine, Descoperind Enigmele lui Daniel, 
+
+1. Acasă   - showcase with links la despre noi, doctrine, Descoperind Enigmele lui Daniel, 
            Apocalipsa Actualizată
+           -
+
+
           
