@@ -7,13 +7,15 @@
       name="description"
       content="Seventh Day Adventist Church site - Site-ul Bisericii Adventiste de Ziua a Șaptea Lunca Ampoiței"
     />
-    <meta name="keywords" content="website, site web, biserică, church, " />
+    <meta name="keywords" content="website, site web, biserică, church" />
     <meta name="author" content="Crișan Rareș-Cristian" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/90773a75f5.js" crossorigin="anonymous"></script>
     <title>AZȘ Lunca Ampoiței</title>
   </head>
   <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v8.0" nonce="AuDUGOX5"></script>
     <header id="main-header">
       <div id="main-header-inner">
         <div id="logo">
@@ -21,7 +23,7 @@
         </div>
 
         <h1 id="title">
-          Biserica Adventistă de Ziua a Șaptea - <strong>Lunca Ampoiței</strong>
+          Biserica AZȘ <div><strong>Lunca Ampoiței</strong></div> 
         </h1>
 
         <div id="main-btn">
@@ -33,21 +35,30 @@
             <a class="menu-item home" id="home" href="#" draggable="false">Acasă</a>
             <a class="menu-item about" id="about" href="#" draggable="false">Despre noi</a>
             <a class="menu-item doctrine" id="doctrine" href="#" draggable="false">Doctrina</a>
+            <a class="menu-item-toggle projects drop-btn" id="projects" href="#" draggable="false">Proiecte <i class="fas fa-caret-down"></i></a>
             <a class="menu-item more" id="more" href="#" draggable="false">Mai multe</a>
           </nav>
         </div>
       </div>
     </header>
 
+    <div class="drop-content">
+      <a class="menu-item AA" href="#">Apocalipsa Actualizată</a>
+    
+      <a class="menu-item DEluiD" href="#">Descoperind Enigmele lui Daniel</a>
+    </div>
+    
     <section>
       <div class="container">
         <div class="showcase">
-          <div id="home-content" class="hide show padding">
-            <h2>Bun venit !</h2>
+        <div id="home-content" class="show padding">
+            <h2 class="center">Bun venit !</h2>
             <p>Bun venit pe pagina oficială a Bisericii Adventiste de Ziua a Șaptea din Lunca Ampoiței</p>
-          </div>
+            <p>Noi reguli cu privire la serviciile de închinare</p>       
+            </div>
           <div id="todos">
-            <h3>Iată lucrurile pe care le puteți face:</h3>
+            <!-- <h3>Iată lucrurile pe care le puteți face:</h3> -->
+            <!-- <div class="fb-post" data-href="https://www.facebook.com/AZSLuncaAmpoitei/videos/816002448924263/" data-show-text="false" data-width="1000px"></div> -->
           </div>
         </div>
       </div>
@@ -56,7 +67,7 @@
     <section>
       <div class="container">
         <div class="showcase">
-          <div id="about-content" class="hide padding">
+        <div id="about-content" class="padding">
             <h3>Despre noi</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -72,7 +83,7 @@
     <section>
       <div class="container">
         <div class="showcase">
-          <div id="doctrine-content" class="hide padding">
+        <div id="doctrine-content" class="padding">
             <h3>Doctrină</h3>
             <ul>
               <li>Descoperirea lui Dumnezeu</li>
@@ -87,7 +98,39 @@
     <section>
       <div class="container">
         <div class="showcase">
-          <div id="more-content" class="hide padding">
+        <div id="DEluiD-content" class="padding">
+            <h3>Descoperind Enigmele lui Daniel</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio amet reprehenderit vero perspiciatis provident officiis
+              nam, at accusantium esse nobis consequuntur temporibus ratione
+              corporis architecto beatae, ad mollitia perferendis in?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="showcase">
+        <div id="AA-content" class="padding">
+            <h3>Apocalipsa Actualizată</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio amet reprehenderit vero perspiciatis provident officiis
+              nam, at accusantium esse nobis consequuntur temporibus ratione
+              corporis architecto beatae, ad mollitia perferendis in?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="showcase">
+        <div id="more-content" class="padding">
             <h3>Mai multe</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -99,6 +142,25 @@
         </div>
       </div>
     </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div id="footer-links">
+          <a class="footer-link" href="https://www.facebook.com/AZSLuncaAmpoitei/" target="_blank"><i class="fab fa-facebook"></i><p>Biserica AZȘ Lunca Ampoiței</p></a>
+          <a class="footer-link" href="https://www.adventist.ro" target="_blank"><img height="20px" src="poze/SDA-logo.png" alt="adventist-logo"><p>Adventist.ro</p></a>
+          <a class="footer-link" href="http://www.sperantatv.ro/" target="_blank"><img height="16px" src="poze/hope-logo.png" alt="SperantaTV-logo"><p>Speranța TV</p></a>
+
+        </div>
+        <div id="footer-menu">
+          <a class="menu-item home" id="home" href="#" >Acasă</a>
+          <a class="menu-item about" id="about" href="#" >Despre noi</a>
+          <a class="menu-item doctrine" id="doctrine" href="#">Doctrina</a>
+          <a class="menu-item more" id="more" href="#" >Mai multe</a>
+        </div>
+        <div class="copyright">2020 &copy; Biserica Adventistă de Ziua a Șaptea Lunca Ampoiței</div>
+
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>
