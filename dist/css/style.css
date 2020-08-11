@@ -106,6 +106,7 @@ hr {
 
 /* menu bar */
 #main-header #menu {
+  max-height: 0;
   overflow: auto;
   background-color: transparent;
   text-align: center;
