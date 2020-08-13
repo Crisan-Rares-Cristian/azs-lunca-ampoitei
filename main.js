@@ -5,7 +5,11 @@ var showcase = document.getElementsByClassName("showcase");
 // Vars for drop menu
 var dropBtn = document.getElementsByClassName("drop-btn");
 var dropContent = document.getElementsByClassName("drop-content");
+var loader = document.getElementById("loader");
 
+setTimeout(function() {
+  loader.style.display = "none";
+}, 4000);
 
 // Loops throught the dropBtn HTML Collection
 for(let i = 0; i < dropBtn.length; i++) {
