@@ -9,7 +9,8 @@
 
 3. Loading Screen
 
-4. Finish Doctrine 
+4. Finish Doctrine
+5. Add photos to about us 
 
 
 
