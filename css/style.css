@@ -6,7 +6,6 @@
 }
 
 body {
-  position: relative;
   overflow: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
@@ -19,7 +18,7 @@ body {
 /* Global */
 button {
   border: none;
-  background-color: green;
+  background-color: rgb(1, 92, 177);
   color: white;
   font-weight: bold;
   padding: 12px;
@@ -119,6 +118,8 @@ ul {
 }
 
 /* Text formating UC */
+
+
 .important {
   color: rgba(125, 243, 255, 0.9);
 }
@@ -248,15 +249,15 @@ ul {
 
 /* Dropdown content */
 .drop-content {
-  box-sizing: default;
+  /* box-sizing: default; */
   display: none;
   padding: 20px;
   background-color: dodgerblue;
   width: auto;
   height: auto;
   position: absolute;
-  top: 25%;
-  left: 5%;
+  top: 0;
+  left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
   border-radius: 5px;
   z-index: 3;
@@ -304,14 +305,27 @@ ul {
 .side-item {
  margin-top: 30px;
 }
+
+
+/* about side-content */
+.about_title {
+  color: white;
+  background: rgb(61, 76, 122);
+  border-radius: 4px;
+  margin-top: 225px;
+  margin-left: 10px;
+  width: 220px;
+}
+
 .side-item:first-child {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  background: url(../poze/showcase_about.jpg) no-repeat center 15%/cover;
   height: 375px;
   border: rgb(49, 85, 20) solid 5px;
   border-radius: 7px;
   margin-top: 0;
 }
 
+/* Doctrine */
 .side-item:nth-child(2) {
   background: url(../poze/showcase.jpg) no-repeat center center/cover;
   height: 375px;
@@ -351,7 +365,6 @@ ul {
 }
 
 .menu-text-content {
-  width: 50%;
   background-color: rgba(45, 45, 45, 0.9);
   padding: 30px;
 }
