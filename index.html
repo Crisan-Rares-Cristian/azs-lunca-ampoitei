@@ -17,11 +17,11 @@
   <body>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v8.0" nonce="AuDUGOX5"></script>
-  <div id="loader">
+  <!-- <div id="loader">
     <div class="loader">
       <p class="loader-text">Se încarcă AZȘ Lunca Ampoiței </p>
     </div>
-  </div>
+  </div> -->
 
     <header id="main-header">
       <div id="main-header-inner">
@@ -61,7 +61,10 @@
         <div id="home-content" class="show padding">
           <div class="flex">
             <div class="menu-text-content">
-              <p class="welcome">Bun venit pe pagina oficială a <p class="welcome">Bisericii Adventiste de Ziua a Șaptea din Lunca Ampoiței !</p></p>
+              <p class="welcome">Bun venit pe pagina oficială a <p class="welcome">Bisericii Adventiste de Ziua a Șaptea Lunca Ampoiței !</p></p>
+              
+              <img src="poze/main_showcase.jpg" alt="Biserica Lunca Ampoiței - 2019" id="main_showcase">
+              
               <h2>Noi reguli cu privire la serviciile de închinare</h2> 
 
               <p>Numărul de români afectați de virusul Sars-Cov-2 continuă să fie unul îngrijorător. În urma acestor împrejurări, Departamentul pentru Situaţii de Urgenţă, alături de Consiliile Județene, au luat decizia carantinării anumitor zone din țară.</p>
@@ -108,22 +111,25 @@
               <div class="side-item relative">
                 <h1 class="about_title">Descoperă istoria Bisericii AZȘ Lunca Ampoiței</h1>
                 <p></p>
-                <button class="btn btn-absolute">Click aici <i class="fas fa-arrow-right"></i></button>
+                <button class="btn side-btn">Click aici <i class="fas fa-arrow-right"></i></button>
               </div>
 
               <div class="side-item relative">
                 <h1>Ce credem noi ?</h1>
-                <button class="btn btn-absolute">Află mai multe <i class="fas fa-arrow-right"></i></button>
+                <!-- <video autoplay muted loop id="video">
+                  <source src="videos/SDA-logo-moving.mp4" type="video/mp4">
+                </video> -->
+                <button class="btn side-btn">Click aici <i class="fas fa-arrow-right"></i></button>
               </div>
 
               <div class="side-item relative">
                 <h1>Descoperind Enigmele lui Daniel</h1>
-                <button class="btn btn-absolute">Află mai multe <i class="fas fa-arrow-right"></i></button>
+                <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
               </div>
 
               <div class="side-item relative">
                 <h1>Apocalipsa Actualizată</h1>
-                <button class="btn btn-absolute">Află mai multe <i class="fas fa-arrow-right"></i></button>
+                <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
               </div>
 
             </div> 
@@ -131,7 +137,7 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
 
   <section>
     <div class="container">
@@ -139,12 +145,29 @@
         <div id="about-content" class="padding">
           <div class="text-content">
             <h3>Despre noi</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio amet reprehenderit vero perspiciatis provident officiis
-              nam, at accusantium esse nobis consequuntur temporibus ratione
-              corporis architecto beatae, ad mollitia perferendis in?
-            </p>
+            <p class="about-text">Comunitatea Lunca Ampoiței a luat ființă în anul <span class="important">1947</span> fondator fiind <span class="important">Marian Teodor</span> după cum este menționat în documentul de mai jos<i class="fas fa-arrow-down"></i> </p>
+            <p class="about-text-aid"></p>
+            <img src="poze/DOC_1.jpg" alt="Document înființare" id="DOC_1">
+
+            <ul id="pastors">
+              <li class="pastor">1947-1952 Ștefan Neilescu și Iancu Gheorghe</li>
+              <li class="pastor">1952-1954 Niculescu Emilian SR</li>
+              <li class="pastor">1954-1956 Pițurlea Gheorghe</li>
+              <li class="pastor">1956-1959 Luca Constantinescu</li>
+              <li class="pastor">1959-1960 Rânea Iosif</li>
+              <li class="pastor">1960-1965 Rudi Kestner</li>
+              <li class="pastor">1966-1975 Stoica Ilie</li>
+              <li class="pastor">1976-1983 Niculescu Emilian JR</li>
+              <li class="pastor">1983-1990 Aldea Traian</li>
+              <li class="pastor">1991-1996 Ciorbă Iosif</li>
+              <li class="pastor">1996-1998 Curilă Iosif</li>
+              <li class="pastor">1998-1999 Herțeliu Ioan</li>
+              <li class="pastor">2000-2004 Anca Simi</li>
+              <li class="pastor">2004-2006 Cirț Daniel</li>
+              <li class="pastor">2006-2014 Mateiaș Ștefan</li>
+              <li class="pastor">2014-2019 Pelin Ștefan</li>
+              <li class="pastor">2019-prezent Simion Buciuman</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -157,11 +180,187 @@
         <div id="doctrine-content" class="padding">
           <div class="text-content">
             <h3>Doctrină</h3>
-            <ul>
-              <li>Descoperirea lui Dumnezeu</li>
-              <li>Despre Trinitate</li>
-              <li>Dumnezeu Tatăl</li>
-            </ul>
+
+                <ol id="doctrines">
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-1">Cuvântul lui Dumnezeu</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-2">Dumnezeirea</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-3">Dumnezeu Tatăl</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-4">Dumnezeu Fiul</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-5">Dumnezeu Duhul Sfânt</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-6">Creaţia</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-7">Natura omului</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-8">Marea luptă</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-9">Viaţa, moartea şi învierea Domnului Hristos</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-10">Experienţa mântuirii</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-11">Creşterea în Hristos</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-12">Biserica</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-13">Rămăşiţa şi misiunea ei</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-14">Unitatea în trupul lui Hristos</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-15">Botezul</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-16">Cina Domnului</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-17">Darurile si slujbele spirituale</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-18">Darul profeţiei</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-19">Legea lui Dumnezeu</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-20">Sabatul</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-21">Administrarea creştină a resurselor vieţii</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-22">Comportamentul creştin</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-23">Căsătoria şi familia</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-24">Lucrarea Domnului Hristos în Sanctuarul ceresc</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-25">A Doua Venire a Domnului Hristos</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-26">Moartea şi învierea</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-27">Mileniul şi sfârşitul păcatului</a>
+                  </li>
+                  <li class="doctrine-item">
+                    <a href="#" class="menu-item doctrine-28">Noul Pământ</a>
+                  </li>
+                </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="showcase">
+        <div id="doctrine-1-content" class="padding doctrine-content">
+          <div class="text-content">
+            <h1 class="doctrine-title">Cuvântul lui Dumnezeu</h1>
+            <p><strong><em>Sfânta Scriptură, Vechiul şi Noul Testament, constituie Cuvântul scris al lui Dumnezeu, transmis prin </em></strong><strong><em>inspiraţie divină, prin oamenii sfinţi ai lui Dumnezeu, care au vorbit şi au scris mişcaţi de Duhul Sfânt. În acest Cuvânt, Dumnezeu i-a încredinţat omului cunoştinţele necesare în vederea mântuirii. Sfintele Scripturi constituie descoperirea infailibilă a voii Sale. Ele sunt norma pentru caracter, criteriul de verificare pentru experienţă, revelarea supremă a doctrinelor şi relatarea demnă de încredere a intervenţiilor lui Dumnezeu în istorie. (2 Petru 1,20.21; 2 Tim. 3,16.17; Ps. 119,105; Prov. 30,5.6; Is. 8,20; Ioan 17,17; 1 Tes. 2,13; Evrei 4,12)</em></strong></p>
+<p>Nicio carte n-a fost atât de iubită, atât de urâtă, atât de venerată şi atât de blestemată ca Biblia. Pentru Biblie au murit oameni. Alţii au fost ucişi în numele ei. Ea a inspirat cele mai măreţe şi mai nobile acţiuni ale oamenilor şi a fost declarată vinovată pentru cele mai condamnabile şi mai degradante fapte. Pentru Biblie s-au declanşat războaie, paginile ei au hrănit revoluţii, iar imperii s-au spulberat datorită ideilor ei. Oameni de toate facturile – de la teologi ai eliberării până la capitalişti, de la fascişti la marxişti, de la dictatori la eliberatori, de la pacifişti la militarişti – toţi cercetează paginile ei, pentru a căuta cuvinte cu care să-şi justifice acţiunile.</p>
+<p>Dar unicitatea Bibliei nu e dată de influenţa ei politică, socială şi culturală fără egal, ci e dată de sursa şi conţinutul ei. Ea este revelaţia dată de Dumnezeu cu privire la unicul Dumnezeu-om: Fiul lui Dumnezeu, Isus Hristos – Mântuitorul lumii.</p>
+<p><strong>Revelaţia divină</strong></p>
+<p>În timp ce, în decursul istoriei, unii au pus la îndoială existenţa lui Dumnezeu, mulţi au susţinut plini de încredere că El există şi că S-a făcut pe Sine cunoscut. În ce fel S-a dezvăluit Dumnezeu şi care este rolul Bibliei în dezvăluirea Sa?</p>
+<p><strong><em>Revelaţia generală</em></strong>. Înţelegerea caracterului lui Dumnezeu pe care o dobândim privind la comportamentul şi conştiinţa umană şi la natură este în mod frecvent numită „revelaţia generală”, pentru că ea este la îndemâna tuturor şi se adresează raţiunii.</p>
+<p>Pentru milioane de oameni, „cerurile spun slava lui Dumnezeu şi întinderea lor vesteşte lucrarea mâinilor Lui” (Ps. 19,1). Strălucirea soarelui, ploaia, munţii şi izvoarele, toate mărturisesc despre un Creator iubitor. „În adevăr, însuşirile nevăzute ale Lui, puterea Lui veşnică şi dumnezeirea Lui se văd lămurit de la facerea lumii, când te uiţi cu băgare de seamă la ele, în lucrurile făcute de El. Aşa că nu se pot dezvinovăţi” (Rom. 1,20).</p>
+<p>Alţii văd în relaţiile armonioase şi în iubirea uimitoare dintre pri­e­teni, dintre membrii familiei, soţ şi soţie, părinţi şi copii, dovada exis­tenţei unui Dumnezeu plin de iubire. „Cum mângâie pe cineva mama sa, aşa vă voi mângâia Eu” (Is. 66,13). „Cum se îndură un tată de copiii lui, aşa Se îndură Domnul de cei ce se tem de El” (Ps. 103,13).</p>
+<p>Cu toate acestea, aceeaşi strălucire a soarelui care mărturiseşte despre un Creator iubitor poate transforma pământul într-un deşert pârjolit de arşiţă, aducând foamete. Aceeaşi ploaie poate să se transforme în îngrozitoare inundaţii care să înece familii; aceleaşi culmi se pot sfărâma şi prăbuşi, nimicind totul. Relaţiile umane sunt adesea atinse de gelozie, invidie, mânie şi chiar ură, care împing la fapte rele. Lumea din jurul nostru transmite semnale derutante, generând mai multe întrebări decât răspunsuri. Se poate observa un conflict între bine şi rău, dar nu se explică de ce şi cum a început conflictul, cine este angajat în luptă, de ce sau cine va birui în final.</p>
+<p><strong><em>Revelaţia specială</em></strong>. Păcatul stânjeneşte revelarea personală a lui Dumnezeu prin creaţie, întunecând capacitatea noastră de a interpreta mărturia lui Dumnezeu. Din iubire, Dumnezeu ne-a dat o des­coperire specială despre Sine spre a ne ajuta să primim răspunsuri la aceste întrebări. Prin Vechiul şi Noul Testament, El Se face cunoscut într-un mod special, ce nu lasă nicio umbră de îndoială cu privire la caracterul şi iubirea Sa. La început, revelarea lui Dumnezeu s-a produs prin profeţi, apoi a urmat revelarea supremă, prin persoana Domnului Isus Hristos (Evrei 1,1.2).</p>
+<p>Biblia conţine atât adevăruri despre Dumnezeu, cât şi descoperiri ale persoanei Sale. Amândouă domeniile de revelaţie sunt necesare. Noi avem nevoie să-L cunoaştem pe Dumnezeu prin Isus Hristos (Ioan 17,3), precum şi „adevărul care este în Isus” (Ef. 4,21). Şi, prin mijlocirea Scripturilor, Dumnezeu trece dincolo de limitările noastre intelectuale, morale şi spirituale, comunicându-ne dorinţa Lui arzătoare de a ne salva.</p>
+<p><strong>Tema centrală a Scripturilor</strong></p>
+<p>Biblia Îl face cunoscut pe Dumnezeu şi expune natura umană. Ea înfăţişează situaţia noastră critică şi dezvăluie soluţia Sa. Ea ne înfăţişează ca pierduţi, înstrăinaţi de Dumnezeu şi ni-L descoperă pe Domnul Isus ca Singurul care ne găseşte şi ne aduce înapoi la Dumnezeu.</p>
+<p>Isus Hristos este tema centrală a Scripturii. Vechiul Testament ni-L prezintă pe Fiul lui Dumnezeu ca Mesia, Răscumpărătorul lumii. Noul Testament Îl prezintă ca fiind Isus Hristos, Mântuitorul. Fiecare carte, prin simboluri sau realităţi, relevă aspecte ale lucrării şi caracterului Său. Moartea Domnului Isus pe cruce este suprema revelaţie a caracterului lui Dumnezeu.</p>
+<p>Crucea aduce această descoperire supremă, deoarece pune laolaltă două extreme: răul insondabil al omului şi iubirea inepuizabilă a lui Dumnezeu. Cum altfel am putea înţelege mai bine slăbiciunea fiinţei umane? Ce ar putea să demonstreze mai bine păcatul? Crucea dovedeşte existenţa unui Dumnezeu care a îngăduit ca unicul Său Fiu să fie ucis. Ce sacrificiu! Ce dovadă mai mare a iubirii ar fi putut El să manifeste? Cu adevărat, tema centrală a Bibliei este Isus Hristos. El este în centrul acestei drame cosmice. În curând, triumful Său de la Calvar va culmina cu eliminarea răului. Fiinţele omeneşti şi Dumnezeu vor fi reuniţi.</p>
+<p>Tema iubirii lui Dumnezeu, în mod deosebit aşa cum este ea văzută în moartea răscumpărătoare a Domnului Hristos la Golgota – cel mai mare adevăr al universului – reprezintă punctul central al Bibliei. Toate adevărurile majore ale Bibliei trebuie studiate, deci, din această perspectivă.</p>
+<p><strong>Autorul Scripturii</strong></p>
+<p>Autoritatea Bibliei în materie de credinţă şi de conduită e deter­minată de originea pe care o are. Scriitorii ei au considerat Bi­blia ca fiind deosebită de orice altă scriere. Ei au numit-o „Sfintele Scripturi” (Rom. 1,2), „Cuvântul a­devărului” (2 Tim. 3,15) şi „cuvintele lui Dumnezeu” (Rom. 3,2; Evrei 5,12).</p>
+<p>Unicitatea Scripturilor constă în originea lor. Scriitorii Bibliei au declarat că nu ei sunt autorii mesajelor transmise, ci le-au primit din surse divine. Prin revelaţie divină au fost ei în stare să „vadă” adevărurile pe care le-au transmis (vezi Is. 1,1; Amos 1,1; Mica 1,1; Hab. 1,1; Ier. 38,21).</p>
+<p>Aceşti scriitori au arătat spre Duhul Sfânt ca fiind Acela care a comunicat cu oamenii prin profeţi (Neemia 9,30; Zah. 7,12). David spunea: „Duhul Domnului vorbeşte prin mine şi Cuvântul Lui este pe limba mea” (2 Sam. 23,2). Ezechiel scria: „A intrat Duhul în mine”, „Duhul Domnului a căzut peste mine”, „m-a răpit Duhul” (Ezech. 2,2; 11,5.24). Mica mărturisea: „Dar eu sunt plin de putere, plin de Duhul Domnului” (Mica 3,8).</p>
+<p>Noul Testament recunoaşte rolul Duhului Sfânt în elaborarea Vechiului Testament. Domnul Hristos a spus că David a fost inspirat de către Duhul Sfânt (Marcu 12,36). Pavel credea că Duhul Sfânt a vorbit „prin Isaia” (Fapte 28,25). Petru a afirmat că Duhul Sfânt i-a călăuzit pe toţi profeţii, nu numai pe câţiva dintre ei (1 Petru 1,10.11; 2 Petru 1,21). Uneori, scriitorul rămânea complet necunoscut şi numai autorul real – Duhul Sfânt – era recunoscut: „Cum zice Duhul Sfânt…” „Prin aceasta, Duhul Sfânt arăta” (Evrei 3,7; 9,8).</p>
+<p>Scriitorii Noului Testament L-au recunoscut, de asemenea, pe Duhul Sfânt ca fiind sursa propriilor lor mesaje. Pavel explica: „Dar Duhul spune lămurit că, în vremurile din urmă, unii se vor lepăda de credinţă” (1 Tim. 4,1). Ioan spunea: „În ziua Domnului eram în Duhul” (Apoc. 1,10). Iar Domnul Isus Hristos i-a trimis în lucrare pe apostolii Săi prin mijlocirea Duhului Sfânt (Fapte 1,2; Ef. 3,3-5).</p>
+<p>Deci Dumnezeu, în persoana Duhului Sfânt, S-a dezvăluit pe Sine prin Sfânta Scriptură; El a scris-o nu cu propriile Sale mâini, ci folosindu-Se de alte mâini, vreo 40, pe parcursul unei perioade de mai bine de 1.500 de ani. Şi, deoarece Dumnezeu Duhul Sfânt i-a inspirat pe toţi scriitorii, Dumnezeu este, de fapt, Autorul ei.</p>
+<p><strong>Inspiraţia Scripturilor</strong></p>
+<p>„Toată Scriptura”, spunea Pavel, „este insuflată de Dumnezeu”<br />
+(2 Tim. 3,16). Cuvântul grecesc <em>theopneustos</em> înseamnă, literal, „Dum­nezeu a suflat” sau  „Dumnezeu a insuflat”. Dumnezeu a suflat/insuflat adevărul în mintea oamenilor. La rândul lor, ei l-au exprimat prin cuvintele pe care le găsim în Sfânta Scriptură. Inspiraţia este, deci, procesul prin care Dumnezeu comunică adevărul Său cel veşnic.</p>
+<p><strong><em>Procesul inspiraţiei.</em></strong> Revelaţia divină le-a fost dată, prin inspiraţie de la Dumnezeu, oamenilor „sfinţi ai lui Dumnezeu”, care au fost „mânaţi de Duhul Sfânt” (2 Petru 1,21). Aceste descoperiri au fost concretizate în limbaj omenesc, cu toate limitările şi imperfecţiunile lui, dar ele au rămas totuşi mărturia lui Dumnezeu. Dumnezeu i-a inspirat pe oameni, nu le-a dictat cuvintele.</p>
+<p>Au fost profeţii la fel de pasivi ca o bandă de magnetofon, care redă exact ceea ce s-a înregistrat pe ea? În unele cazuri, scriitorilor li s-a poruncit să exprime în mod exact chiar cuvintele lui Dumnezeu, dar, în majoritatea cazurilor, Dumnezeu i-a instruit să descrie, cât mai bine cu putinţă, ceea ce au văzut sau auzit. În acest caz, scriitorii foloseau limbajul şi stilul proprii.</p>
+<p>Pavel a observat că „duhurile prorocilor sunt supuse prorocilor” (1 Cor. 14,32). Adevărata inspiraţie nu poate să şteargă individuali­tatea, raţiunea, integritatea sau personalitatea profetului. Într-o mă­sură oarecare, relaţia dintre Moise şi Aaron ilustrează legătura dintre Duhul Sfânt şi scriitor. Dumnezeu i-a spus lui Moise: „Iată că te fac Dumnezeu pentru faraon, şi fratele tău Aaron va fi profetul tău” (Ex. 7,1; 4,15.16). Moise îl informa pe Aaron despre soliile lui Dumnezeu, iar Aaron, la rândul său, le comunica faraonului, în propriul limbaj şi în stilul său. Tot la fel, scriitorii Bibliei au transmis poruncile, gândurile şi ideile divine în propriul stil şi limbaj. Acest mod de comunicare al lui Dumnezeu explică de ce vocabularul cărţilor Bibliei diferă şi reflectă educaţia şi cultura fiecărui scriitor.</p>
+<p>Biblia, deci, „nu redă forma de gândire şi exprimare a lui Dumnezeu. [&#8230;] Oamenii spun adesea că o anumită expresie nu I se potriveşte lui Dumnezeu. Dar Dumnezeu nu trebuie judecat după cuvintele, logica şi retorica Bibliei. Oamenii care au scris Biblia au fost scriitorii lui Dumnezeu, nu pana de scris a lui Dumnezeu.”<a href="#_ftn1" name="_ftnref1"><sup>[1]</sup></a> „Inspiraţia nu acţionează asupra cuvintelor sau a expresiilor omului, ci asupra omului însuşi, căruia, sub influenţa Duhului Sfânt, i se insuflă gânduri. Dar cuvintele primesc amprenta minţii omului. Gândirea divină se revarsă asupra omului. Mintea şi voinţa divine se împletesc cu mintea şi voinţa umane; în acest fel declaraţiile omului sunt Cuvântul lui Dumnezeu.”<a href="#_ftn2" name="_ftnref2"><sup>[2]</sup></a></p>
+<p>Totuşi, într-o ocazie, Dumnezeu a rostit şi a scris exact cuvintele Sale, şi anume cele Zece Porunci. Ele au o alcătuire divină, nu umană (Ex. 20,1-17; 31,18; Deut. 10,4.5). Totuşi, chiar şi acestea au trebuit să fie exprimate în limitele limbajului omenesc.</p>
+<p>Biblia, deci, este adevărul divin exprimat în limbaj omenesc. Să ne imaginăm încercarea de a-l învăţa pe un copil fizica cuantică. Aceasta este problema cu care S-a confruntat şi Dumnezeu în încercarea de a comunica adevărurile divine unei omeniri păcătoase, limitate. Limitarea noastră restrânge ceea ce poate El să ne comunice.</p>
+<p>Există o paralelă între Isus cel întrupat şi Biblie: Isus era Dumnezeu şi om în acelaşi timp, divin şi uman, îmbinat în Unul singur. Biblia este, tot la fel, o combinaţie divino-umană. Ce s-a spus despre Hristos poate fi spus şi despre Biblie: „Cuvântul S-a făcut trup şi a locuit printre noi” (Ioan 1,14). Această combinaţie divino-umană face ca Biblia să fie unică printre lucrările literare.</p>
+<p><strong><em>Inspiraţia şi scriitorii.</em></strong> Duhul Sfânt pregăteşte anumite persoane ca să le comunice adevărul divin. Biblia nu explică în detaliu cum a calificat El aceste persoane, dar, într-un oarecare mod, s-a format o unire între agentul divin şi cel uman.</p>
+<p>Aceia care au contribuit la scrierea Bibliei nu au fost aleşi datorită unor talente naturale. Revelaţia divină nici n-a convertit neapărat persoana în cauză şi nici nu i-a asigurat viaţa veşnică. Balaam, ins­pirat fiind, a proclamat un mesaj divin în timp ce acţiona contrar sfaturilor lui Dumnezeu (Numeri 22 – 24). David, care a fost folosit de către Duhul Sfânt, a comis păcate mari (Ps. 51). Toţi scriitorii Bibliei au fost oameni cu natură păcătoasă, având zilnic nevoie de harul lui Dumnezeu (Rom. 3,12).</p>
+<p>Inspiraţia de care au avut parte scriitorii Bibliei a fost ceva mai mult decât o iluminare sau o călăuzire divină, deoarece acestea vin asupra tuturor acelora care caută adevărul. De fapt, scriitorii Bibliei au scris uneori fără să înţeleagă pe deplin mesajul divin pe care l-au transmis (1 Petru 1,10-12).</p>
+<p>Era foarte diferită reacţia scriitorilor la mesajul pe care îl transmiteau. Daniel şi Ioan au spus că au fost peste măsură de uluiţi de scrierile lor (Dan. 8,27; Apoc. 5,4), iar 1 Petru 1,10 arată că alţi scriitori au căutat să înţeleagă semnificaţia mesajului lor sau al altora. Uneori aceste persoane se temeau să vestească un mesaj inspirat, iar altele chiar au avut discuţii în contradictoriu cu Dumnezeu (Hab. 1; Iona 1,1-3; 4,1-11).</p>
+<p><strong><em>Metoda şi conţinutul revelaţiei.</em></strong> Adesea, Duhul Sfânt a transmis concepte divine prin intermediul viziunilor şi visurilor (Num. 12,6). Uneori, El a vorbit tare, auzibil, alteori S-a adresat simţămintelor. Lui Samuel, Dumnezeu i-a vorbit direct (1 Sam. 9,15). Zaharia a primit o reprezentare simbolică şi explicaţii (Zah. 4). Viziunile cu privire la cer pe care le-au primit Pavel şi Ioan au fost însoţite de instrucţiuni orale (2 Cor. 12,1-4; Apoc. 4,5). Lui Ezechiel i-au fost arătate evenimente ce se întâmplau în altă parte (Ezech. 8). Unii scriitori au avut un rol activ în viziunile lor, îndeplinind anumite funcţii ca o parte integrantă a viziunilor primite (Apoc. 10).</p>
+<p>În ceea ce priveşte conţinutul, Duhul Sfânt le descoperea unora evenimente viitoare (Dan. 2; 7; 8; 12). Alţi scriitori înregistrau evenimente istorice fie pe baza experienţei personale, fie prin selectarea materialelor din izvoarele istorice existente (Judecători, 1 Samuel,<br />
+2 Cronici, Evangheliile, Faptele).</p>
+<p><strong><em>Inspiraţia şi istoria.</em></strong> Declaraţia biblică potrivit căreia „toată Scriptura este insuflată de Dumnezeu şi de folos”, reprezentând o autoritate pentru vieţuirea morală şi spirituală (2 Tim. 3,15.16), nu lasă nicio îndoială cu privire la călăuzirea divină în procesul selectării informaţiilor. Indiferent că provin dintr-o observaţie personală, din izvoare orale sau scrise sau prin revelare directă, toate informaţiile ajung la scriitor prin mijlocirea Duhului Sfânt. Acest lucru garantează veridicitatea Bibliei.</p>
+<p>Biblia dezvăluie planul lui Dumnezeu, prin intermediul relaţiei Sale dinamice cu neamul omenesc, nu printr-o colecţie de doctrine abstracte. Această revelare de Sine este bine fixată în evenimente reale ce au avut loc într-un anume timp şi loc. Certitudinea relatărilor istorice este extrem de importantă, pentru că ele formează cadrul înţelegerii de către noi a caracterului lui Dumnezeu şi a planului Său cu noi. O înţelegere corectă duce la viaţă veşnică, pe când un punct de vedere incorect duce la confuzie şi moarte.</p>
+<p>Dumnezeu le-a poruncit anumitor oameni să scrie o istorie a modului în care El S-a purtat cu Israel. Aceste relatări istorice, scrise dintr-un unghi diferit de acela al istoriei profane, formează o importantă parte a Bibliei (Num. 33,1.2; Iosua 24,25.26; Ezech. 24,2). Ele ne asigură o istorie corectă şi obiectivă, prezentată dintr-o perspectivă divină. Duhul Sfânt a dat scriitorilor capacitatea deosebită de a aşeza în scris secvenţe din lupta dintre bine şi rău, care demonstrează caracterul lui Dumnezeu şi îi călăuzesc pe oameni în căutarea mântuirii.</p>
+<p>Evenimentele istorice sunt „pilde” sau exemple scrise „pentru învăţătura noastră, peste care au venit sfârşiturile veacurilor” (1 Cor. 10,11). Apostolul Pavel spune: „Şi tot ceea ce a fost scris mai înainte a fost scris pentru învăţătura noastră, pentru ca, prin răbdarea şi mângâierea pe care le dau Scripturile, să avem nădejde” (Rom. 15,4). Nimicirea Sodomei şi Gomorei slujeşte ca o „pildă” sau o avertizare (2 Petru 2,6; Iuda 7). Experienţa îndreptăţirii lui Avraam este un exemplu pentru fiecare credincios (Rom. 4,1-25; Iacov 2,14-22). Chiar legile civile ale Vechiului Testament, pline de o profundă însemnătate spirituală, sunt scrise pentru binele nostru, al celor de astăzi (1 Cor. 9,8.9).</p>
+<p>Luca menţionează faptul că el şi-a scris Evanghelia deoarece a dorit să prezinte o relatare a vieţii lui Isus „ca să poţi cunoaşte astfel temeinicia învăţăturilor pe care le-ai primit prin viu grai” (Luca 1,4). Criteriul lui Ioan de selectare a evenimentelor din viaţa lui Isus care să fie incluse în Evanghelia sa a fost acela „ca voi să credeţi că Isus este Hristosul, Fiul lui Dumnezeu; şi, crezând, să aveţi viaţă în Numele Lui” (Ioan 20,31). Dumnezeu i-a condus pe scriitorii Bibliei să prezinte istoria astfel încât să ne conducă la mântuire.</p>
+<p>Biografiile personalităţilor biblice ne oferă o altă dovadă a inspi­raţiei divine. Aceste relatări descriu pe deplin atât defectele, cât şi calităţile caracterului lor. Ele înfăţişează cu exactitate atât păcatele, cât şi succesele lor.</p>
+<p>Nimeni n-a ascuns lipsa de stăpânire de sine a lui Noe sau înşelă­ciunea lui Avraam. Izbucnirile de mânie ale lui Moise, Pavel, Iacov şi Ioan nu sunt trecute cu vederea. Istoria biblică expune eşecurile celui mai înţelept rege al lui Israel, precum şi slăbiciunile celor doisprezece patriarhi şi ale celor doisprezece apostoli. Scriptura nu îi scuză în niciun fel şi nici nu încearcă să le micşoreze vinovăţia. Ea îi înfăţişează pe toţi aşa cum au fost şi cum au devenit sau cum nu au devenit, având nevoie de harul lui Dumnezeu. Fără inspiraţie divină, niciun biograf n-ar fi fost în stare să scrie astfel de analize pătrunzătoare.</p>
+<p>Scriitorii Bibliei au considerat toate povestirile istorice pe care aceasta le conţine ca fiind consemnări istorice adevărate, şi nu mituri sau simboluri. Mulţi sceptici resping astăzi relatarea cu privire la Adam şi Eva, la Iona şi la Potop. Cu toate acestea, Isus Hristos le-a acceptat ca fiind adevărate din punct de vedere istoric şi relevante din punct de vedere spiritual (Mat. 12,39-41; 19,4-6; 24,37-39).</p>
+<p>Biblia nu vorbeşte despre o inspiraţie parţială şi nu spune că unele părţi ale Bibliei sunt mai puţin inspirate decât altele. Aceste teorii sunt simple speculaţii şi lipsesc Biblia de autoritatea ei divină.</p>
+<p><strong><em>Exactitatea Scripturilor.</em></strong> Aşa după cum Isus „S-a făcut trup şi a locuit printre noi” (Ioan 1,14), tot la fel, pentru ca noi să înţelegem adevărul, Biblia a fost dată în limbajul omenirii. Inspiraţia Scripturilor garantează exactitatea ei.</p>
+<p>Cât de mult a ocrotit Dumnezeu transmiterea textului, pe lângă faptul de a Se asigura că mesajul este valabil şi adevărat? Este clar fap­tul că, deşi există variaţii în vechile manuscrise, adevărurile esen­ţiale au fost păstrate.<a href="#_ftn3" name="_ftnref3"><sup>[3]</sup></a> Deşi este foarte posibil ca traducătorii şi copiştii Bibliei să fi făcut greşeli minore, dovezile arheologiei biblice demonstrează faptul că multe aşa-zise erori erau, în realitate, înţe­legeri greşite din partea cercetătorilor. Unele dintre aceste probleme au apărut pentru că oamenii au citit istoria şi obiceiurile biblice cu ochii unor occidentali. Trebuie să admitem că oamenii înţeleg numai parţial, iar posibilităţile lor de a pătrunde în acţiunile Divinităţii rămân limitate.</p>
+<p>Observarea unor contradicţii, deci, nu trebuie să submineze încrederea în Sfânta Scriptură; ele sunt adesea produsul neputinţei noastre de a înţelege, nu greşeli reale. Să-L judecăm oare pe Dumnezeu atunci când dăm peste o frază sau peste un text pe care nu-l putem înţelege pe deplin? Poate că nu vom fi niciodată în stare să explicăm fiecare text al Scripturilor; dar nici nu e nevoie. Împlinirea profeţiilor confirmă cu putere autenticitatea Scripturilor.</p>
+<p>În ciuda încercărilor de a fi distrusă, Biblia a fost păstrată cu o exactitate uimitoare, ba chiar miraculoasă. Compararea Sulurilor de la Marea Moartă cu manuscrisele de mai târziu ale Vechiului Testament demonstrează grija cu care ea a fost transmisă.<a href="#_ftn4" name="_ftnref4"><sup>[4]</sup></a> Ele confirmă credibilitatea şi veridicitatea Scripturii, ca descoperire infailibilă a voinţei lui Dumnezeu.</p>
+<p><strong>Autoritatea Scripturilor</strong></p>
+<p>Scripturile au autoritate divină pentru că în ele Dumnezeu vorbeşte prin Duhul Sfânt. Astfel, Biblia este Cuvântul scris al lui Dumnezeu. Unde este dovada acestei afirmaţii şi ce implicaţii are pentru viaţa noastră şi pentru eforturile noastre de a cunoaşte?</p>
+<p><strong><em>Afirmaţiile Scripturilor.</em></strong> Scriitorii Bibliei dau mărturie că soliile lor vin direct de la Dumnezeu. „Cuvântul lui Dumnezeu” era acela care a venit la Ieremia, Ezechiel, Osea şi la alţii (Ier. 1,1.2.9; Ezech. 1,3; Osea 1,1; Ioel 1,1; Iona 1,1). Ca soli ai lui Dumnezeu (Hagai 1,13; 2 Cron. 36,16), profeţilor lui Dumnezeu li s-a poruncit să vorbească în numele Său, spunând: „Aşa zice Domnul” (Ezech. 2,4; Is. 7,7). Cuvintele Sale sunt pentru ei scrisorile divine de acreditare şi certifică autoritatea lor.</p>
+<p>Uneori, instrumentul folosit de Dumnezeu trece în planul al doilea. Matei se referă astfel la autoritatea ce stă în spatele profetului Vechiului Testament pe care îl citează: „Toate aceste lucruri s-au întâmplat, ca să se împlinească ce vestise Domnul prin prorocul” (Mat. 1,22). Domnul era văzut aici ca fiind factorul direct, autoritatea; profetul era agentul indirect.</p>
+<p>Petru consideră scrierile lui Pavel drept „Scripturi” (2 Petru 3,15.16). Iar Pavel mărturiseşte cu privire la ceea ce a scris că „n-am primit-o, nici n-am învăţat-o de la vreun om, ci prin descoperirea lui Isus Hristos” (Gal. 1,12). Scriitorii Noului Testament au acceptat  Cuvintele Domnului Hristos ca fiind Scripturi şi le-au considerat ca având aceeaşi autoritate ca şi scrierile Vechiului Testament (1 Tim. 5,18; Luca 10,7).</p>
+<p><strong><em>Isus şi autoritatea Scripturilor.</em></strong> În toată activitatea Sa, Isus a accentuat autoritatea Scripturilor. Când era ispitit de Satana sau când Se lupta cu vrăjmaşii Săi, „stă scris” era folosit atât în apărare, cât şi în atac (Mat. 4,4.7.10; Luca 20,17). „Omul nu trăieşte numai cu pâine”, a spus El, „ci cu orice cuvânt care iese din gura lui Dumnezeu” (Mat. 4,4). Când a fost întrebat cum poate cineva să primească viaţa veşnică, El a răspuns: „Cum este scris în Lege? Cum citeşti în ea?” (Luca 10,26).</p>
+<p>Isus a aşezat Biblia mai presus de tradiţie şi de părerile oamenilor. El i-a mustrat pe iudei pentru că dădeau la o parte autoritatea Scripturilor (Marcu 7,7-9) şi a făcut apel la ei să le studieze mult mai atent, spunând: „Oare n-aţi citit lucrul acesta din Scripturi?” (Mat. 21,42; Marcu 12,10.26).</p>
+<p>El credea cu tărie în autoritatea cuvântului profetic şi sublinia faptul că acesta arăta spre Sine. „Scripturile”, spunea El, „mărturisesc despre Mine.” „Căci dacă l-aţi crede pe Moise, M-aţi crede şi pe Mine, pentru că el a scris despre Mine” (Ioan 5,39.46). Cele mai convingătoare declaraţii ale lui Isus privind misiunea Sa divină se bazau pe împlinirea de către El a profeţiilor Vechiului Testament (Luca 24,25-27).</p>
+<p>În felul acesta, fără nicio rezervă, Isus Hristos a privit Sfânta Scriptură ca revelarea plină de autoritate a voii lui Dumnezeu pentru neamul omenesc. El a văzut Scriptura ca un cod al adevărului, o revelaţie obiectivă dată pentru a scoate omenirea din întunericul tradiţiilor greşite şi al miturilor, spre adevărata lumină a cunoaşterii mântuitoare.</p>
+<p><strong><em>Duhul Sfânt şi autoritatea Scripturilor.</em></strong> În timpul vieţii Domnului Hristos, conducătorii religioşi şi mulţimea nepăsătoare n-au recunoscut adevărata Lui identitate. Unii au crezut că era un profet, asemenea lui Ioan Botezătorul, Ilie sau Ieremia – un simplu om. Când Petru a dat mărturie că Isus era „Hristosul, Fiul Viului Dumnezeu”, Isus a arătat că mărturia sa a fost posibilă datorită unei iluminări divine (Mat. 16,13-17). Pavel subliniază acelaşi adevăr: „Nimeni nu poate zice: Isus este Domnul, decât prin Duhul Sfânt” (1 Cor. 12,3).</p>
+<p>Tot aşa este şi în ceea ce priveşte Cuvântul scris al lui Dumnezeu. Fără iluminarea minţii de către Duhul Sfânt, nu vom putea înţelege niciodată, în mod corect, Biblia sau s-o recunoaştem ca exprimarea autorizată a voinţei lui Dumnezeu.<a href="#_ftn5" name="_ftnref5"><sup>[5]</sup></a> Deoarece „nimeni nu cunoaşte lucrurile lui Dumnezeu afară de Duhul lui Dumnezeu” (1 Cor. 2,11), „omul firesc nu primeşte lucrurile Duhului lui Dumnezeu, căci pentru el sunt o nebunie; şi nici nu le poate înţelege, pentru că trebuie judecate duhovniceşte” (1 Cor. 2,14). În consecinţă, „propovăduirea crucii este o nebunie pentru cei ce sunt pe calea pierzării” (1 Cor. 1,18).</p>
+<p>Numai cu ajutorul Duhului Sfânt, care cercetează „lucrurile adânci ale lui Dumnezeu” (1 Cor. 2,10), poate cineva ajunge să se convingă de autoritatea Bibliei ca descoperire a lui Dumnezeu şi a voii Sale. Numai atunci, crucea devine „puterea lui Dumnezeu” (1 Cor. 1,18) şi omul poate rosti împreună cu Pavel: „Noi n-am primit duhul lumii, ci Duhul care vine de la Dumnezeu, ca să putem cunoaşte lucrurile pe care ni le-a dat Dumnezeu prin harul Său” (1 Cor. 2,12).</p>
+<p>Sfânta Scriptură şi Duhul Sfânt nu pot fi niciodată despărţiţi. Duhul Sfânt este atât autorul, cât şi revelatorul adevărului biblic.</p>
+<p>Autoritatea Scripturilor în viaţa noastră creşte sau descreşte în funcţie de concepţia noastră despre inspiraţie. Dacă noi înţelegem Biblia ca fiind numai o colecţie de mărturii omeneşti sau dacă autoritatea pe care i-o recunoaştem depinde de felul în care ne mişcă sentimentele sau emoţiile, atunci autoritatea ei în viaţa noastră este subminată. Dar, atunci când recunoaştem vocea lui Dumnezeu vorbind prin scriitorii ei – indiferent cât de slabi şi omeneşti au fost ei –, Scripturile devin autoritatea absolută în probleme de doctrină, mustrare, îndrumare şi învăţătură în neprihănire (2 Tim. 3,16).</p>
+<p><strong><em>Domeniul autorităţii Scripturilor.</em></strong> Contradicţiile dintre Sfânta Scriptură şi ştiinţă sunt în mod frecvent rezultatul speculaţiilor. Faptul că nu putem armoniza ştiinţa cu Scriptura se întâmplă pentru că noi „înţelegem imperfect fie ştiinţa, fie revelaţia…, dar, înţelese corect, ele sunt într-o perfectă armonie”.<a href="#_ftn6" name="_ftnref6"><sup>[6]</sup></a></p>
+<p>Toată înţelepciunea omenească trebuie să fie supusă autorităţii Scripturii. Adevărurile Bibliei sunt norma după care trebuie să fie probate toate celelalte adevăruri. Judecarea Cuvântului lui Dumnezeu după standardele mărginite ale omului se aseamănă cu încercarea de a măsura stelele cu metrul. Biblia nu trebuie să fie supusă normelor omeneşti. Ea este mai presus de toată înţelepciunea şi li­te­ratura omenească. În loc să judecăm noi Biblia, ea va fi cea în raport cu care vom fi judecaţi noi, pentru că ea este standardul carac­te­rului şi criteriul de verificare al întregii experienţe şi gândiri omeneşti.</p>
+<p>În concluzie, Sfânta Scriptură are autoritate chiar şi peste darurile spirituale ce vin de la Duhul Sfânt, inclusiv peste călăuzirea prin darul profetic sau vorbirea în limbi (1 Cor. 12; 14,1; Ef. 4,7-16). Darurile Duhului nu întrec Biblia, dimpotrivă ele trebuie să fie probate cu Biblia şi, dacă nu sunt în armonie cu ea, trebuie să fie respinse ca nefiind autentice. „La Lege şi la mărturie, căci dacă nu vor vorbi aşa, nu vor mai răsări zorile peste poporul acesta” (Is. 8,20). (Vezi şi capitolul 18 al cărţii de faţă.)</p>
+<p><strong>Unitatea Scripturilor</strong></p>
+<p>O citire superficială a Scripturii va avea ca rezultat o înţelegere superficială. Citită în felul acesta, Biblia poate să pară o amestecătură fără noimă de povestiri, predici şi istorie. Dar aceia care sunt deschişi iluminării Duhului lui Dumnezeu, aceia care sunt dispuşi să caute adevărurile ascunse, cu răbdare şi multă rugăciune, descoperă că Biblia dă dovadă de o unitate fundamentală în ceea ce ne învaţă despre principiile mântuirii. Biblia nu se prezintă într-o uniformitate monotonă. Din contră, ea cuprinde o bogată şi colorată diversitate de mărturii armonioase, de o frumuseţe rară şi distinsă. Şi, datorită acestei varietăţi de perspective, Cuvântul lui Dumnezeu poate să satisfacă mai bine nevoile omului de-a lungul tuturor timpurilor.</p>
+<p>Dumnezeu S-a revelat omenirii nu într-un şir de declaraţii neîntrerupte, ci puţin câte puţin, în decursul unor generaţii succesive. Fie că au fost scrise de Moise în câmpia Madianului, fie de Pavel într-o închisoare romană, cărţile Bibliei dovedesc aceeaşi comunicare inspirată de Duhul Sfânt. Înţelegerea acestei „descoperiri progresive” contribuie la înţelegerea Bibliei şi unităţii ei.</p>
+<p>Deşi au fost scrise în generaţii diferite, adevărurile Vechiului şi Noului Testament rămân inseparabile: ele nu se contrazic unele cu altele. Cele două Testamente sunt unul, aşa cum Dumnezeu este Unul singur. Vechiul Testament, prin profeţii şi simboluri, dezvăluie Evanghelia Mântuitorului ce avea să vină; Noul Testament, prin viaţa lui Isus, Îl prezintă pe Mântuitorul care a venit – Evanghelia în realitate. Amândouă Îl prezintă pe acelaşi Dumnezeu. Vechiul Testament serveşte ca temelie pentru Noul Testament. El este cheia ce deschide Noul Testament, în timp ce Noul Testament explică tainele Vechiului Testament.</p>
+<p>Plin de har şi bunătate, Dumnezeu ne cheamă să-L cunoaştem prin cercetarea Cuvântului Său. În el, putem găsi bogatele binecuvântări ale garanţiei mântuirii noastre. Putem descoperi prin experienţa proprie că Scripturile sunt „de folos ca să înveţe, să mustre, să îndrepte, să dea înţelepciune în neprihănire”. Prin ele, noi putem fi „desăvârşiţi şi cu totul destoinici pentru orice lucrare bună” (2 Tim. 3,16.17).</p>
+<p><a href="#_ftnref1" name="_ftn1"><sup>[1]</sup></a> Ellen G. White, <em>Selected Messages</em> (Washington, D.C.: Review and Herald, 1958) book 1, p. 21.</p>
+<p><a href="#_ftnref2" name="_ftn2"><sup>[2]</sup></a> <em>Ibidem.</em></p>
+<p><a href="#_ftnref3" name="_ftn3"><sup>[3]</sup></a> Pentru o explicaţie cu privire la diferenţele din manuscrise, vezi Ellen G. White, <em>Experienţe şi viziuni,</em> p. 220, 221.</p>
+<p><a href="#_ftnref4" name="_ftn4"><sup>[4]</sup></a> Vezi Siegfried H. Horn, <em>The Spade Confirms the Book</em>  (rev. ed., Washington, D.C., Review and Herald, 1980).</p>
+<p><a href="#_ftnref5" name="_ftn5"><sup>[5]</sup></a> Pentru detalii în ceea ce priveşte viziunea generală a Bisericii Adventiste cu privire la interpretarea Bibliei, vezi Raportul Comitetului Anual al Conferinţei Generale din 12 oct. 1986, „Methods of Bible Study”, distribuit de către Biblical Research Institute, Conferinţa Generală a Adventiştilor de Ziua a Şaptea. Vezi, de asemenea, <em>A</em> <em>Symposium on Biblical Hermeneutics</em>, ed. G. M. Hyde (Washington D.C.: Review and Herald, 1974). G. F. Hasel, <em>Understanding the Living Word of God</em> (Mountain View, CA.: Pacific Press, 1980); P. G. <em>Damsteegt, Interpreting the Bible</em> (lucrare pregătită pentru întâlnirea Comitetului de Cercetări Biblice al Diviziunii Orientului Îndepărtat, Singapore, mai 1986).</p>
+<p><a href="#_ftnref6" name="_ftn6"><sup>[6]</sup></a> Ellen G. White, <em>Patriarhi şi profeţi</em>, p. 114.</p>
+
           </div>
         </div>
       </div>
