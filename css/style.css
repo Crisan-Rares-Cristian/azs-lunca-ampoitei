@@ -8,7 +8,7 @@
 body {
   overflow: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   background-color: rgb(148, 187, 224);
   color: white;
 }
@@ -204,7 +204,7 @@ ul {
 
 /* menu bar */
 #main-header #menu {
-  max-height: 0;
+  max-height: auto;
   overflow: auto;
   background-color: transparent;
   text-align: center;
@@ -282,7 +282,6 @@ ul {
   text-align: center;
 }
 
-/* Main_showcase */
 #main_showcase {
   width: 100%;
   border-radius: 5px;
@@ -292,13 +291,126 @@ ul {
   color: white;
   position: relative;
   z-index: 2;
-  padding: 5px 20px;
   min-height: 90vh;
 }
 
 .padding p, .padding ul li {
   z-index: 2;
 }
+
+
+
+/* Home Tab */
+
+#coll-rules-content {
+  overflow: hidden;
+  max-height: 110px;
+  transition: max-height 1s;
+}
+
+
+/* main content HT*/
+.text-content {
+  background-color: rgba(45, 45, 45, 0.9);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.menu-text-content {
+  background-color: rgba(45, 45, 45, 0.9);
+  padding: 30px;
+}
+
+
+/* Side content HT*/
+.side-content a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.side-content a:last-child {
+  margin-bottom: 40px;
+}
+
+.side-content {
+  width: 90%;
+  margin: auto;
+}
+
+.side-item {
+ margin-top: 30px;
+}
+
+.side-btn {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 66%;
+}
+
+@media(min-width: 500px) {
+  .side-btn {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 66%;
+  }
+}
+
+/* about - Side_Content */
+.about_title {
+  color: white;
+  background: rgb(61, 76, 122);
+  border-radius: 4px;
+  margin-top: 225px;
+  margin-left: 10px;
+  max-width: 220px;
+}
+
+.about-title:hover {
+  opacity: 0.6;
+}
+
+.side-item-about {
+  background: url(../poze/showcase_about.jpg) no-repeat center 13%/cover;
+  height: 375px;
+  border: rgb(49, 85, 20) solid 1px;
+  border-radius: 7px;
+  padding:0;
+  margin-top: 0;
+}
+
+/* Doctrine - Side_Content */
+#video {
+  width: 100%;
+  height: 100%;
+}
+
+.side-item-doctrine {
+  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  height: 375px;
+  border: rgb(230, 226, 36) solid 5px;
+  border-radius: 7px;
+}
+
+/* Descoperind Enigmele lui Daniel - Side_Content */
+.side-item-DEluiD {
+  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  height: 375px;
+  border: rgb(230, 226, 36) solid 5px;
+  border-radius: 7px;
+}
+
+/* Apocalipsa Actualizată - Side_Content */
+.side-item-AA {
+  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  height: 375px;
+  border: rgb(230, 226, 36) solid 5px;
+  border-radius: 7px;
+}
+
+
+
 
 /* About tab */
 
@@ -308,11 +420,19 @@ ul {
 }
 
 .about-text {
+  font-size: 20px;
   text-indent: 50px;
 }
 
 .about-text, .about-text-aid {
   text-indent: 50px;
+}
+
+#about-content ol {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 20px;
 }
 
 #pastors {
@@ -322,6 +442,8 @@ ul {
 .pastor {
   margin-bottom: 10px;
 }
+
+
 
 /* Doctrine Tab */
 
@@ -347,7 +469,6 @@ ul {
 .doctrine-content strong {
   font-size: 24px;
   color: rgba(125, 243, 255, 1);
-  /* padding-bottom: 100px; */
 }
 
 .doctrine-content em {
@@ -361,96 +482,15 @@ ul {
 }
 
 
-/* Text content */
-.text-content {
-  background-color: rgba(45, 45, 45, 0.9);
-  border-radius: 8px;
-  padding: 30px;
-}
 
-.menu-text-content {
-  background-color: rgba(45, 45, 45, 0.9);
-  padding: 30px;
+/* More Tab */
+
+#more-content h3 {
+  padding-bottom: 15px;
 }
 
 
 
-/* Side content */
-.side-content {
-  width: 100%;
-}
-
-.side-item {
- margin-top: 30px;
-}
-
-.side-btn {
-  display: none;
-  position: absolute;
-  top: 80%;
-  left: 66%;
-}
-
-@media(min-width: 500px) {
-  .side-btn {
-    display: block;
-    position: absolute;
-    top: 80%;
-    left: 66%;
-  }
-}
-
-
-
-/* about side-content */
-.about_title {
-  color: white;
-  background: rgb(61, 76, 122);
-  border-radius: 4px;
-  margin-top: 225px;
-  margin-left: 10px;
-  max-width: 220px;
-}
-
-.about-title:hover {
-  opacity: 0.6;
-}
-
-.side-item:first-child {
-  background: url(../poze/showcase_about.jpg) no-repeat center 13%/cover;
-  height: 375px;
-  border: rgb(49, 85, 20) solid 1px;
-  border-radius: 7px;
-  padding:0;
-  margin-top: 0;
-}
-
-/* Doctrine */
-#video {
-  width: 100%;
-  height: 100%;
-}
-
-.side-item:nth-child(2) {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
-  height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
-  border-radius: 7px;
-}
-
-.side-item:nth-child(3) {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
-  height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
-  border-radius: 7px;
-}
-
-.side-item:nth-child(4) {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
-  height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
-  border-radius: 7px;
-}
 
 
 
@@ -636,6 +676,11 @@ ul {
   }
   .drop-content a:last-child {
     padding-bottom: 0;
+  }
+
+  /* Content */
+  .padding {
+    padding: 5px 20px;
   }
 
   /* Side content */
