@@ -1,4 +1,3 @@
-var mainBtnImg = document.getElementById("main-btn-img");
 var menu = document.getElementById("menu");
 var menuItems = document.getElementsByClassName("menu-item");
 var showcase = document.getElementsByClassName("showcase");
@@ -9,7 +8,7 @@ var loader = document.getElementById("loader");
 
 setTimeout(function() {
   loader.style.display = "none";
-}, 4000);
+}, 5000);
 
 // Loops throught the dropBtn HTML Collection
 for(let i = 0; i < dropBtn.length; i++) {
@@ -30,18 +29,6 @@ for(let i = 0; i < dropBtn.length; i++) {
 }
 
 
-//Function that toogles the menu button on mobile devices
-function toggle() {
-  if (menu.style.maxHeight) {
-    menu.style.maxHeight = null;
-    mainBtnImg.style.transform = "rotate(90deg)";
-  } else {
-    menu.style.maxHeight = menu.scrollHeight + "px";
-    mainBtnImg.style.transform = "rotate(180deg)";
-    menu.style.transitionDuration = '0.5s';
-  }
-}
-
 
 /*show 1*/
 
@@ -60,7 +47,6 @@ function selectItem(e) {
   content.classList.add('show');
   menu.style.maxHeight = null;
   menu.style.transitionDuration = '0.1s';
-  mainBtnImg.style.transform = 'rotate(90deg)';
 }
 
 // Removes all content
@@ -70,4 +56,30 @@ function selectItem(e) {
       }
     }
 
-// Toggle Dark Theme
+
+
+
+// Collapsible
+
+var coll = document.getElementsByClassName('collapsible');
+let collapsed = true;
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', toggleColl)
+}
+
+function toggleColl() {
+  var toggled = document.getElementById(this.id + '-content');
+
+  if (collapsed == true) {
+    toggled.style.maxHeight = toggled.scrollHeight + 'px';
+    this.innerHTML =  'Ascunde Reguliile';
+    collapsed = false;
+  }
+  else {
+    toggled.style.maxHeight = '125px';
+    this.innerHTML = 'Află Mai multe';
+    collapsed = true;
+  }
+
+}

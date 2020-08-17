@@ -17,11 +17,11 @@
   <body>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v8.0" nonce="AuDUGOX5"></script>
-  <!-- <div id="loader">
+  <div id="loader">
     <div class="loader">
       <p class="loader-text">Se încarcă AZȘ Lunca Ampoiței </p>
     </div>
-  </div> -->
+  </div>
 
     <header id="main-header">
       <div id="main-header-inner">
@@ -34,7 +34,6 @@
         </h1>
 
         <div id="main-btn">
-          <img id="main-btn-img" onclick="toggle()" src="./poze/lines.png" draggable="false"/>
         </div>
 
         <div id="menu-container">
@@ -56,7 +55,7 @@
     </div>
     
   <section>
-    <div class="container">
+    <div class="home-container">
       <div class="showcase">
         <div id="home-content" class="show padding">
           <div class="flex">
@@ -65,9 +64,12 @@
               
               <img src="poze/main_showcase.jpg" alt="Biserica Lunca Ampoiței - 2019" id="main_showcase">
               
-              <h2>Noi reguli cu privire la serviciile de închinare</h2> 
+              <h2>Noi reguli cu privire la serviciile de închinare </h2> 
 
-              <p>Numărul de români afectați de virusul Sars-Cov-2 continuă să fie unul îngrijorător. În urma acestor împrejurări, Departamentul pentru Situaţii de Urgenţă, alături de Consiliile Județene, au luat decizia carantinării anumitor zone din țară.</p>
+              <button class="collapsible" id="coll-rules">Află mai multe</button>
+              
+              <div id="coll-rules-content">
+                <p>Numărul de români afectați de virusul Sars-Cov-2 continuă să fie unul îngrijorător. În urma acestor împrejurări, Departamentul pentru Situaţii de Urgenţă, alături de Consiliile Județene, au luat decizia carantinării anumitor zone din țară.</p>
 
               <p>Biserica Adventistă din România face apel către credincioșii aflați în <span class="important">zone de carantină să se informeze</span> și <span class="important">să respecte regulile impuse de autorităti la nivel local</span>. Sunt situații în care administrațiile locale au luat decizia ca întâlnirile religioase să nu se mai poată organiza în interiorul lăcașurillor de cult, ci doar în afara lor, în spațiu deschis. De asemenea, sunt județe în care purtarea măștilor de protecție a devenit obligatorie în toate spațiile publice deschise.</p>
 
@@ -104,33 +106,42 @@
               <p class="mb-12">– se recomandă menținerea distanțării sociale și evitarea salutului prin strângerea mâinilor.</p>
 
               <i class="pl-12">Departamentul de Comunicare din cadrul Bisericii Adventiste de Ziua a Șaptea din România </i> 
+              </div>
               <br>
               <small class="ml-24 op-08">sursa: <a href="https:\\www.adventist.ro" target="_blank">adventist.ro</a></small>
             </div> 
             <div class="side-content">
-              <div class="side-item relative">
-                <h1 class="about_title">Descoperă istoria Bisericii AZȘ Lunca Ampoiței</h1>
-                <p></p>
+
+              <a href="#" class="menu-item about">
+              <div class="side-item-about relative">
+                  <h1 class="about_title">Descoperă istoria Bisericii AZȘ Lunca Ampoiței</h1>
+                  <p></p>
                 <button class="btn side-btn">Click aici <i class="fas fa-arrow-right"></i></button>
               </div>
+            </a>
 
-              <div class="side-item relative">
+            <a href="#" class="menu-item doctrine">
+              <div class="side-item-doctrine relative">
                 <h1>Ce credem noi ?</h1>
                 <!-- <video autoplay muted loop id="video">
                   <source src="videos/SDA-logo-moving.mp4" type="video/mp4">
                 </video> -->
                 <button class="btn side-btn">Click aici <i class="fas fa-arrow-right"></i></button>
               </div>
+            </a>
 
-              <div class="side-item relative">
+            <a href="#" class="menu-item DEluiD">
+              <div class="side-item-DEluiD relative">
                 <h1>Descoperind Enigmele lui Daniel</h1>
                 <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
               </div>
-
-              <div class="side-item relative">
+            </a>
+            <a href="#" class="menu-item AA-content">
+              <div class="side-item-AA relative">
                 <h1>Apocalipsa Actualizată</h1>
                 <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
               </div>
+            </a>  
 
             </div> 
           </div>
@@ -140,7 +151,6 @@
   </section>
 
   <section>
-    <div class="container">
       <div class="showcase">
         <div id="about-content" class="padding">
           <div class="text-content">
@@ -149,7 +159,7 @@
             <p class="about-text-aid"></p>
             <img src="poze/DOC_1.jpg" alt="Document înființare" id="DOC_1">
 
-            <ul id="pastors">
+            <ol id="pastors">
               <li class="pastor">1947-1952 Ștefan Neilescu și Iancu Gheorghe</li>
               <li class="pastor">1952-1954 Niculescu Emilian SR</li>
               <li class="pastor">1954-1956 Pițurlea Gheorghe</li>
@@ -167,114 +177,110 @@
               <li class="pastor">2006-2014 Mateiaș Ștefan</li>
               <li class="pastor">2014-2019 Pelin Ștefan</li>
               <li class="pastor">2019-prezent Simion Buciuman</li>
-            </ul>
+            </ol>
           </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="showcase">
+      <div id="doctrine-content" class="padding">
+        <div class="text-content">
+          <h3>Doctrină</h3>
+
+              <ol id="doctrines">
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-1">Cuvântul lui Dumnezeu</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-2">Dumnezeirea</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-3">Dumnezeu Tatăl</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-4">Dumnezeu Fiul</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-5">Dumnezeu Duhul Sfânt</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-6">Creaţia</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-7">Natura omului</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-8">Marea luptă</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-9">Viaţa, moartea şi învierea Domnului Hristos</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-10">Experienţa mântuirii</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-11">Creşterea în Hristos</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-12">Biserica</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-13">Rămăşiţa şi misiunea ei</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-14">Unitatea în trupul lui Hristos</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-15">Botezul</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-16">Cina Domnului</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-17">Darurile si slujbele spirituale</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-18">Darul profeţiei</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-19">Legea lui Dumnezeu</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-20">Sabatul</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-21">Administrarea creştină a resurselor vieţii</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-22">Comportamentul creştin</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-23">Căsătoria şi familia</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-24">Lucrarea Domnului Hristos în Sanctuarul ceresc</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-25">A Doua Venire a Domnului Hristos</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-26">Moartea şi învierea</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-27">Mileniul şi sfârşitul păcatului</a>
+                </li>
+                <li class="doctrine-item">
+                  <a href="#" class="menu-item doctrine-28">Noul Pământ</a>
+                </li>
+              </ol>
         </div>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="container">
-      <div class="showcase">
-        <div id="doctrine-content" class="padding">
-          <div class="text-content">
-            <h3>Doctrină</h3>
-
-                <ol id="doctrines">
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-1">Cuvântul lui Dumnezeu</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-2">Dumnezeirea</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-3">Dumnezeu Tatăl</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-4">Dumnezeu Fiul</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-5">Dumnezeu Duhul Sfânt</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-6">Creaţia</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-7">Natura omului</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-8">Marea luptă</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-9">Viaţa, moartea şi învierea Domnului Hristos</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-10">Experienţa mântuirii</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-11">Creşterea în Hristos</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-12">Biserica</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-13">Rămăşiţa şi misiunea ei</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-14">Unitatea în trupul lui Hristos</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-15">Botezul</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-16">Cina Domnului</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-17">Darurile si slujbele spirituale</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-18">Darul profeţiei</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-19">Legea lui Dumnezeu</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-20">Sabatul</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-21">Administrarea creştină a resurselor vieţii</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-22">Comportamentul creştin</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-23">Căsătoria şi familia</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-24">Lucrarea Domnului Hristos în Sanctuarul ceresc</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-25">A Doua Venire a Domnului Hristos</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-26">Moartea şi învierea</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-27">Mileniul şi sfârşitul păcatului</a>
-                  </li>
-                  <li class="doctrine-item">
-                    <a href="#" class="menu-item doctrine-28">Noul Pământ</a>
-                  </li>
-                </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
       <div class="showcase">
         <div id="doctrine-1-content" class="padding doctrine-content">
           <div class="text-content">
@@ -364,56 +370,43 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
     <section>
-      <div class="container">
         <div class="showcase">
           <div id="DEluiD-content" class="padding">
             <div class="text-content">
               <h3>Descoperind Enigmele lui Daniel</h3>
-              <div class="fb-post" data-href="https://www.facebook.com/AZSLuncaAmpoitei/videos/816002448924263/" data-show-text="false" data-width="400px"></div>
+              <div class="fb-post" data-href="https://www.facebook.com/AZSLuncaAmpoitei/videos/816002448924263/" data-show-text="false" data-width="300px"></div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section>
-      <div class="container">
         <div class="showcase">
           <div id="AA-content" class="padding">
             <div class="text-content">
               <h3>Apocalipsa Actualizată</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio amet reprehenderit vero perspiciatis provident officiis
-                nam, at accusantium esse nobis consequuntur temporibus ratione
-                corporis architecto beatae, ad mollitia perferendis in?
-              </p>
+              <div class="fb-post" data-href="https://www.facebook.com/AZSLuncaAmpoitei/videos/742081826530497/" data-show-text="false" data-width="300">
             </div> 
           </div>
         </div>
-      </div>
     </section>
 
     <section>
-      <div class="container">
         <div class="showcase">
           <div id="more-content" class="padding">
             <div class="text-content">
-              <h3>Mai multe</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio amet reprehenderit vero perspiciatis provident officiis
-                nam, at accusantium esse nobis consequuntur temporibus ratione
-                corporis architecto beatae, ad mollitia perferendis in?
-              </p>
+              <h3>Contact</h3>
+              <h4>Telefon: 0786-152-813</h4>
+              <h4>Email: </h4>
+
+              <h3>Amplasare</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1590.872995371013!2d23.375986052390907!3d46.13887239680882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sro!4v1597701982610!5m2!1sen!2sro" width="300" height="200" frameborder="3" style="border:3;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <footer id="main-footer">
