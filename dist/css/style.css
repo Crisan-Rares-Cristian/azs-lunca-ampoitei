@@ -1,3 +1,8 @@
+:root {
+  --button-color: rgb(1, 92, 177);
+  --orange-color: rgba(240, 173, 97, 0.9);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -403,10 +408,14 @@ ul {
 .side-item-about {
   background: url(../poze/showcase_about.jpg) no-repeat center 13%/cover;
   height: 375px;
-  border: rgb(49, 85, 20) solid 1px;
+  border: rgb(61, 76, 122) solid 1px;
   border-radius: 7px;
   padding:0;
   margin-top: 0;
+}
+
+.side-item-about button {
+  background-color: rgb(61, 76, 122);
 }
 
 .about_title {
@@ -424,10 +433,19 @@ ul {
 
 /* Doctrine - Side_Content */
 .side-item-doctrine {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  background: url(../poze/biblia.jpg) no-repeat center center/cover;
   height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
+  border: var(--button-color) solid 1px;
   border-radius: 7px;
+}
+
+.doctrine_title {
+  color: white;
+  background: var(--button-color);
+  border-radius: 4px;
+  margin-top: 225px;
+  margin-left: 10px;
+  max-width: 220px;
 }
 
 #video {
@@ -437,18 +455,45 @@ ul {
 
 /* Descoperind Enigmele lui Daniel - Side_Content */
 .side-item-DEluiD {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  background: url(../poze/DEluiD.jpg) no-repeat center center/cover;
   height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
+  border: rgb(38, 85, 99) solid 1px;
   border-radius: 7px;
+}
+
+.side-item-DEluiD button {
+  background-color: rgb(38, 85, 99);
+}
+
+.DEluiD_title {
+  color: white;
+  background: rgb(38, 85, 99);
+  border-radius: 4px;
+  margin-top: 225px;
+  margin-left: 10px;
+  max-width: 220px;
 }
 
 /* Apocalipsa Actualizată - Side_Content */
 .side-item-AA {
-  background: url(../poze/showcase.jpg) no-repeat center center/cover;
+  background: url(../poze/AA.jpg) no-repeat 30% center/cover;
   height: 375px;
-  border: rgb(230, 226, 36) solid 5px;
+  border: orangered solid 1px;
   border-radius: 7px;
+}
+
+.side-item-AA button {
+  background-color: orangered;
+}
+
+.AA_title {
+  color: white;
+  background: orangered;
+  border-radius: 4px;
+  margin-top: 225px;
+  margin-left: 10px;
+  max-width: 220px;
+  
 }
 
 
@@ -521,6 +566,12 @@ ul {
   color: #ffa92d;
   font-size: 45px;
   text-align: center;
+}
+
+/* DEluiD Tab */
+.fb-post {
+  width: 300px;
+  padding: 30px;
 }
 
 
