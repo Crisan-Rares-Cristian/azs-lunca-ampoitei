@@ -82,7 +82,40 @@ ul {
 
 /* Hide content UC for JS*/
 
-#home-content, #about-content, #doctrine-content, #more-content, #DEluiD-content, #AA-content, #doctrine-1-content {
+#home-content,
+#about-content,
+#doctrine-content, 
+#more-content, 
+#DEluiD-content, 
+#AA-content, 
+#doctrine-1-content, 
+#doctrine-2-content,
+#doctrine-3-content, 
+#doctrine-4-content,
+#doctrine-5-content, 
+#doctrine-6-content, 
+#doctrine-7-content, 
+#doctrine-8-content, 
+#doctrine-9-content, 
+#doctrine-10-content, 
+#doctrine-11-content, 
+#doctrine-12-content, 
+#doctrine-13-content, 
+#doctrine-14-content, 
+#doctrine-15-content, 
+#doctrine-16-content, 
+#doctrine-17-content, 
+#doctrine-18-content, 
+#doctrine-19-content, 
+#doctrine-20-content, 
+#doctrine-21-content, 
+#doctrine-22-content, 
+#doctrine-23-content, 
+#doctrine-24-content, 
+#doctrine-25-content, 
+#doctrine-26-content, 
+#doctrine-27-content, 
+#doctrine-28-content {
   display: none;
 }
 
@@ -117,6 +150,15 @@ ul {
 .important {
   color: rgba(125, 243, 255, 0.9);
 }
+
+.important-1 {
+  color: rgba(240, 173, 97, 0.9);
+}
+
+.important-2 {
+  color: rgba(97, 171, 240, 0.9);
+}
+
 
 .op-08 {
   opacity: 0.8;
@@ -202,7 +244,7 @@ ul {
   margin-top: 20px;
 }
 
-/* menu bar */
+/* Menu Bar */
 #main-header #menu {
   max-height: auto;
   overflow: auto;
@@ -303,7 +345,7 @@ ul {
 /* Home Tab */
 
 #coll-rules-content {
-  overflow: hidden;
+  overflow-y: hidden;
   max-height: 110px;
   transition: max-height 1s;
 }
@@ -334,7 +376,7 @@ ul {
 
 .side-content {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .side-item {
@@ -358,6 +400,15 @@ ul {
 }
 
 /* about - Side_Content */
+.side-item-about {
+  background: url(../poze/showcase_about.jpg) no-repeat center 13%/cover;
+  height: 375px;
+  border: rgb(49, 85, 20) solid 1px;
+  border-radius: 7px;
+  padding:0;
+  margin-top: 0;
+}
+
 .about_title {
   color: white;
   background: rgb(61, 76, 122);
@@ -371,26 +422,17 @@ ul {
   opacity: 0.6;
 }
 
-.side-item-about {
-  background: url(../poze/showcase_about.jpg) no-repeat center 13%/cover;
-  height: 375px;
-  border: rgb(49, 85, 20) solid 1px;
-  border-radius: 7px;
-  padding:0;
-  margin-top: 0;
-}
-
 /* Doctrine - Side_Content */
-#video {
-  width: 100%;
-  height: 100%;
-}
-
 .side-item-doctrine {
   background: url(../poze/showcase.jpg) no-repeat center center/cover;
   height: 375px;
   border: rgb(230, 226, 36) solid 5px;
   border-radius: 7px;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
 }
 
 /* Descoperind Enigmele lui Daniel - Side_Content */
@@ -683,6 +725,16 @@ ul {
     padding: 5px 20px;
   }
 
+
+
+  /* Home Tab */
+
+#coll-rules-content {
+  overflow-y: scroll;
+  max-height: 300px;
+  transition: max-height 1s;
+}
+
   /* Side content */
   .side-content {
     /* background: black; */
@@ -722,44 +774,3 @@ ul {
 }
 
 
-/* Loader */
-#loader {
-  content:"";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(148, 213, 243) ;
-  z-index: 4;
-}
-
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  display: inline;
-  transform: translate(-50%,-50%);
-  z-index: 5;
-}
-
-.loader-text {
-  font-size: 50px;
-  color: rgba(7, 50, 107, 0.925);
-}
-
-.loader-text::after {
-  content:"...";
-  transform: translateY(20px);
-  display: inline-block;
-  overflow: hidden;
-  width:0;
-  animation: loader steps(4, end) 4s infinite;
-}
-
-@keyframes loader {
-  to {
-    width: 112px;
-  }
-}
