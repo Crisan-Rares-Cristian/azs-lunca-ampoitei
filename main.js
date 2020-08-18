@@ -6,6 +6,9 @@ var dropBtn = document.getElementsByClassName("drop-btn");
 var dropContent = document.getElementsByClassName("drop-content");
 var loader = document.getElementById("loader");
 
+//Media query START
+function mediaQuery(x) {
+
 setTimeout(function() {
   loader.style.display = "none";
 }, 5000);
@@ -68,18 +71,36 @@ for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener('click', toggleColl)
 }
 
+
 function toggleColl() {
   var toggled = document.getElementById(this.id + '-content');
 
   if (collapsed == true) {
     toggled.style.maxHeight = toggled.scrollHeight + 'px';
+    toggled.style.overflow = 'hidden';
     this.innerHTML =  'Ascunde Reguliile';
     collapsed = false;
   }
   else {
-    toggled.style.maxHeight = '125px';
+    if(x.matches) { 
+      console.log('x.matches');
+      toggled.style.maxHeight = '300px';
+      toggled.style.overflowY = 'scroll'; 
+    }
+    else if(!x.matches) { 
+      console.log('x.not matches');
+      toggled.style.maxHeight = '125px';
+      toggled.style.overflow = 'hidden'; 
+    }
     this.innerHTML = 'Află Mai multe';
     collapsed = true;
   }
-
+  
 }
+
+
+}//media query - END
+// Media Query init and callback
+var x = window.matchMedia("(min-width: 784px)");
+mediaQuery(x);
+x.addListener(mediaQuery);
