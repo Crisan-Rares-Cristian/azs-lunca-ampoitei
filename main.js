@@ -92,7 +92,7 @@ function toggleColl() {
       toggled.style.maxHeight = '125px';
       toggled.style.overflow = 'hidden'; 
     }
-    this.innerHTML = 'Află Mai multe';
+    this.innerHTML = 'Află mai multe';
     collapsed = true;
   }
   
