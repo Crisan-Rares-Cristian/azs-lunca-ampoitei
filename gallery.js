@@ -89,16 +89,16 @@ if(nrImg == 1) {
 
 
 // On button screen toggle fullscreen for images
-document.querySelector("#full-screen-img").addEventListener('click', goFullScrImg);
+document.querySelector("#full-screen-img").addEventListener('click', goFullScr);
 
-function goFullScrImg() {
+function goFullScr() {
   open('poze/Gallery/'+ nrImg +'.jpg');
 }
 
 // On button screen toggle fullscreen for docs
-document.querySelector("#full-screen-doc").addEventListener('click', goFullScrDoc);
+document.querySelector("#full-screen-doc").addEventListener('click', goFullScr);
 
-function goFullScrDoc() {
+function goFullScr() {
   open('poze/documente/'+ nrDoc +'.jpg');
 }
 
