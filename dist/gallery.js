@@ -89,9 +89,9 @@ if(nrImg == 1) {
 
 
 // On button screen toggle fullscreen for images
-document.querySelector("#full-screen-img").addEventListener('click', goFullScr);
+document.querySelector("#full-screen-img").addEventListener('click', goFullScr1);
 
-function goFullScr() {
+function goFullScr1() {
   open('poze/Gallery/'+ nrImg +'.jpg');
 }
 
