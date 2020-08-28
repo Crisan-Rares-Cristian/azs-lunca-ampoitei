@@ -123,6 +123,7 @@ button:hover {
   border: solid #fff 1px;
   color: #fff;
   border-radius: 8px;
+  /* -webkit-text-stroke: 2px navy; */
  }
  
   /* prv button */
@@ -225,7 +226,7 @@ button:hover {
 }
 
 /* Height media query */
-@media(max-height: 600px) {
+@media(max-height: 400px) {
   /* Main showcase */
   .main-showcase {
     flex-direction: row;
@@ -240,6 +241,9 @@ button:hover {
    top: 10px;
    left: 50%;
    transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
   }
 
   /* prv button */

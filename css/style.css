@@ -375,6 +375,30 @@ iframe {
   padding: 30px;
 }
 
+/* Calendar */
+.calendar {
+  margin: 5px;
+  margin-top: 30px;
+  padding: 20px;
+  padding-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+
+#calendar-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#calendar-ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+#calendar-ul li {
+  margin-bottom: 15px;
+}
+
 /* Side content HT*/
 .side-content a {
   text-decoration: none;
@@ -482,10 +506,11 @@ iframe {
 
 /* Apocalipsa Actualizată - Side_Content */
 .side-item-AA {
-  background: url(../poze/AA.jpg) no-repeat 30% center/cover;
+  background: url(../poze/AA.jpg) no-repeat 25% center/cover;
   height: 375px;
   border: orangered solid 1px;
   border-radius: 7px;
+  margin-bottom: 20px;
 }
 
 .side-item-AA button {
@@ -647,6 +672,10 @@ iframe {
 
 #more-content h3 {
   padding-bottom: 15px;
+}
+
+#more-content h4 {
+  margin-bottom: 12px;
 }
 
 /* Showcase */
