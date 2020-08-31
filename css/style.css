@@ -19,6 +19,29 @@ body {
   color: white;
 }
 
+/* width */
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #d2d9e0;
+  border-radius: 0;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: rgb(45, 77, 136);
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(40, 121, 175);
+}
+
 /* Global */
 button {
   border: none;
@@ -30,9 +53,8 @@ button {
   cursor: pointer;
 }
 
-button:hover i {
-  transform: translateX(5px);
-  -webkit-transform: translateX(5px);
+button:hover {
+  box-shadow: 4px 4px 10px 2px  rgba(255, 255, 255, 0.7), -4px -4px 10px 2px  rgba(255, 255, 255, 0.7);
 }
 
 p {
@@ -385,17 +407,17 @@ iframe {
   border-radius: 12px;
 }
 
-#calendar-title {
+.calendar-title {
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-#calendar-ul {
+.calendar-ul {
   list-style: none;
   font-size: 20px;
 }
 
-#calendar-ul li {
+.calendar-ul li {
   margin-bottom: 15px;
 }
 
@@ -424,6 +446,8 @@ iframe {
   top: 80%;
   left: 66%;
 }
+
+
 
 @media (min-width: 500px) {
   .side-btn {
@@ -561,8 +585,18 @@ iframe {
 /* Doctrine Tab */
 
 .doctrine-item {
-  margin-left: 50px;
+  display: inline-block;
+  margin: 10px;
   font-size: 20px;
+  text-align: center;
+}
+
+.doctrine-item > a {
+  width: 100%;
+  background: rgba(0, 59, 114, 0.9);
+  border: rgba(0, 225, 255, 0.7) solid 1px;
+  border-radius: 14px;
+  padding: 10px;
 }
 
 /* doctrine 1 Tab */
