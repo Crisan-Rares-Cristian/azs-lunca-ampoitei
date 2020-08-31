@@ -1,3 +1,14 @@
+// //  Preload Images
+//  const preloadImages = url => {
+//    let img = new Image();
+//    img.src = url;
+//  }
+
+//  for(let i = 1; i <= 21; i++) {
+//    preloadImages(`poze/Gallery/${i}.jpg`);
+//  }
+
+
 var img = document.querySelector("#main-img");
 var doc = document.querySelector("#main-doc");
 var nrImg = 1;
