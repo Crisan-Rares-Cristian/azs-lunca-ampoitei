@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -52,9 +53,10 @@ button {
   outline: none;
   cursor: pointer;
 }
-
-button:hover {
-  box-shadow: 4px 4px 10px 2px  rgba(255, 255, 255, 0.7), -4px -4px 10px 2px  rgba(255, 255, 255, 0.7);
+@media(min-width: 758px) {
+.side-btn:hover {
+  box-shadow: 2px 2px 2px 0  rgba(255, 255, 255, 0.7);
+}
 }
 
 p {
@@ -585,7 +587,7 @@ iframe {
 /* Doctrine Tab */
 
 .doctrine-item {
-  display: inline-block;
+  display: inline-flex;
   margin: 10px;
   font-size: 20px;
   text-align: center;
@@ -938,7 +940,7 @@ iframe {
   .prv {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 2vw;
     width: 100px;
     color: #fff;
@@ -949,7 +951,7 @@ iframe {
   .next {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: 2vw;
     width: 100px;
     color: #fff;
@@ -999,5 +1001,13 @@ iframe {
   #AA-link {
     width: 800px;
     height: 450px;
+  }
+
+  .next {
+    top: -250px;
+  }
+
+  .prv {
+    top: -250px;
   }
 }
