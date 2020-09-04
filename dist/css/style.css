@@ -8,8 +8,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 body {
@@ -154,6 +152,10 @@ iframe {
 
 .show {
   display: block !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* Display UC */
