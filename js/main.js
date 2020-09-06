@@ -38,7 +38,7 @@ function mediaQuery(x) {
   for (i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener("click", selectItem);
   }
-  function selectItem(e) {
+  function selectItem(item) {
     // Initialize Remove all content
     removeShow();
     //Query Select the specific content eg for(home, about, doctrine, more)
@@ -87,10 +87,85 @@ function mediaQuery(x) {
       collapsed = true;
     }
   }
+
+
+document.cookie = " Max-Age=2600000; Secure";
+
+
+// checks the device's OS
+var md = new MobileDetect(window.navigator.userAgent);
+console.log( md.os() );
+
+
+// Code for PC
+if(md.os() == null){
+// Capturing back on webpage
+// initiate the lasthash as empty array
+let hashHistory = [];
+
+// Checks if the first # is home
+if(window.location.hash == '#home'){
+  hashHistory.push('#home');
+} else {
+  window.location.hash = '#home';
+}
+
+let pageOut = false;
+document.body.onmouseleave = function() {
+  pageOut = true;
+  console.log(pageOut);
+}
+
+document.body.onmouseenter = function() {
+  pageOut = false;
+  console.log(pageOut);
+}
+
+window.onhashchange = function() {
+  // console.log(hashHistory);
+    if(pageOut == true && hashHistory.length >= 2) {
+      console.log('it works');
+      let item = hashHistory[hashHistory.length - 2];
+      console.log(item);
+      hashHistory.pop();
+      selectItemOnBack(item);
+  } else if(pageOut != true){
+    hashHistory.push(window.location.hash);
+    console.log(window.location.hash);
+    console.log(hashHistory);
+    console.log(window.location);
+  }
+
+  
+ }
+
+//  Select item
+ function selectItemOnBack(item) {
+  // Initialize Remove all content
+  removeShowOnBack();
+  //Query Select the specific content eg for(home, about, doctrine, more)
+  const content = document.querySelector(`${item}-content`);
+  //Adds the class with the display show
+  content.classList.add("show");
+  menu.style.maxHeight = null;
+  menu.style.transitionDuration = "0.1s";
+}
+
+// Removes all content
+function removeShowOnBack() {
+  for (i = 0; i < showcase.length; i++) {
+    showcase[i].firstElementChild.classList.remove("show");
+  }
+}
+}
+// END of code for PC's
+
+
+
+
 } //media query - END
 // Media Query init and callback
 var x = window.matchMedia("(min-width: 784px)");
 mediaQuery(x);
 x.addListener(mediaQuery);
-
-document.cookie = " Max-Age=2600000; Secure";
+ 

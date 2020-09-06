@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/buletin-informativ.css">
     <link rel="icon" href="poze/SDA-logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
     <!-- <script src="https://kit.fontawesome.com/90773a75f5.js" crossorigin="anonymous"></script> -->
     <!-- <link rel="stylesheet" href="../../fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.min.css"> -->
     <script defer src="font-awesome/js/all.js"></script>
@@ -25,7 +26,7 @@
       <p class="loader-text">Se încarcă AZȘ Lunca Ampoiței </p>
     </div>
   </div>
-  <div id="exit-bi"><i class="fas fa-times fa-3x"></i></div>
+ <div id="exit-bi"><i class="fas fa-times fa-3x"></i></div>
 
   <div class="buletin-informativ">
     <div class="azsla_title">
@@ -267,20 +268,20 @@
 
         <div id="menu-container">
           <nav id="menu">
-            <a class="menu-item home" id="home" href="#" draggable="false">Acasă</a>
-            <a class="menu-item about" id="about" href="#" draggable="false">Despre noi</a>
-            <a class="menu-item doctrine" id="doctrine" href="#" draggable="false">Doctrina</a>
-            <a class="menu-item-toggle projects drop-btn" id="projects" href="#" draggable="false">Proiecte <i class="fas fa-caret-down"></i></a>
-            <a class="menu-item more" id="more" href="#" draggable="false">Mai multe</a>
+            <a class="menu-item home" id="home" href="#home" draggable="false">Acasă</a>
+            <a class="menu-item about" id="about" href="#about" draggable="false">Despre noi</a>
+            <a class="menu-item doctrine" id="doctrine" href="#doctrine" draggable="false">Doctrina</a>
+            <a class="menu-item-toggle projects drop-btn pointer" id="projects" draggable="false">Proiecte <i class="fas fa-caret-down"></i></a>
+            <a class="menu-item more" id="more" href="#more" draggable="false">Mai multe</a>
           </nav>
         </div>
       </div>
     </header>
 
     <div class="drop-content">
-      <a class="menu-item AA" href="#">Apocalipsa Actualizată</a>
+      <a class="menu-item AA" href="#AA">Apocalipsa Actualizată</a>
     
-      <a class="menu-item DEluiD" href="#">Descoperind Enigmele lui Daniel</a>
+      <a class="menu-item DEluiD" href="#DEluiD">Descoperind Enigmele lui Daniel</a>
     </div>
     
   <section>
@@ -353,7 +354,7 @@
             </div> 
             <div class="side-content">
 
-              <a href="#" class="menu-item about">
+              <a href="#about" class="menu-item about">
               <div class="side-item-about relative">
                   <h1 class="about_title">Descoperă istoria Bisericii AZȘ Lunca Ampoiței</h1>
                   <p></p>
@@ -361,7 +362,7 @@
               </div>
             </a>
 
-            <a href="#" class="menu-item doctrine">
+            <a href="#doctrine" class="menu-item doctrine">
               <div class="side-item-doctrine relative">
                 <h1 class="doctrine_title">Ce credem noi ?</h1>
                 <!-- <video autoplay muted loop id="video">
@@ -371,13 +372,13 @@
               </div>
             </a>
 
-            <a href="#" class="menu-item DEluiD">
+            <a href="#DEluiD" class="menu-item DEluiD">
               <div class="side-item-DEluiD relative">
                 <h1 class="DEluiD_title">Descoperind Enigmele lui Daniel</h1>
                 <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
               </div>
             </a>
-            <a href="#" class="menu-item AA">
+            <a href="#AA" class="menu-item AA">
               <div class="side-item-AA relative">
                 <h1 class="AA_title">Apocalipsa Actualizată</h1>
                 <button class="btn side-btn">Află mai mult <i class="fas fa-arrow-right"></i></button>
@@ -439,88 +440,88 @@
 
               <ul id="doctrines">
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-1">1. Cuvântul lui Dumnezeu</a>
+                  <a href="#doctrine-1" class="menu-item doctrine-1">1. Cuvântul lui Dumnezeu</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-2">2. Dumnezeirea</a>
+                  <a href="#doctrine-2" class="menu-item doctrine-2">2. Dumnezeirea</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-3">3. Dumnezeu Tatăl</a>
+                  <a href="#doctrine-3" class="menu-item doctrine-3">3. Dumnezeu Tatăl</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-4">4. Dumnezeu Fiul</a>
+                  <a href="#doctrine-4" class="menu-item doctrine-4">4. Dumnezeu Fiul</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-5">5. Dumnezeu Duhul Sfânt</a>
+                  <a href="#doctrine-5" class="menu-item doctrine-5">5. Dumnezeu Duhul Sfânt</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-6">6. Creaţia</a>
+                  <a href="#doctrine-6" class="menu-item doctrine-6">6. Creaţia</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-7">7. Natura omului</a>
+                  <a href="#doctrine-7" class="menu-item doctrine-7">7. Natura omului</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-8">8. Marea luptă</a>
+                  <a href="#doctrine-8" class="menu-item doctrine-8">8. Marea luptă</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-9">9. Viaţa, moartea şi învierea Domnului Hristos</a>
+                  <a href="#doctrine-9" class="menu-item doctrine-9">9. Viaţa, moartea şi învierea Domnului Hristos</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-10">10. Experienţa mântuirii</a>
+                  <a href="#doctrine-10" class="menu-item doctrine-10">10. Experienţa mântuirii</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-11">11. Creşterea în Hristos</a>
+                  <a href="#doctrine-11" class="menu-item doctrine-11">11. Creşterea în Hristos</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-12">12. Biserica</a>
+                  <a href="#doctrine-12" class="menu-item doctrine-12">12. Biserica</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-13">13. Rămăşiţa şi misiunea ei</a>
+                  <a href="#doctrine-13" class="menu-item doctrine-13">13. Rămăşiţa şi misiunea ei</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-14">14. Unitatea în trupul lui Hristos</a>
+                  <a href="#doctrine-14" class="menu-item doctrine-14">14. Unitatea în trupul lui Hristos</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-15">15. Botezul</a>
+                  <a href="#doctrine-15" class="menu-item doctrine-15">15. Botezul</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-16">16. Cina Domnului</a>
+                  <a href="#doctrine-16" class="menu-item doctrine-16">16. Cina Domnului</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-17">17. Darurile si slujbele spirituale</a>
+                  <a href="#doctrine-17" class="menu-item doctrine-17">17. Darurile si slujbele spirituale</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-18">18.Darul profeţiei</a>
+                  <a href="#doctrine-18" class="menu-item doctrine-18">18.Darul profeţiei</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-19">19. Legea lui Dumnezeu</a>
+                  <a href="#doctrine-19" class="menu-item doctrine-19">19. Legea lui Dumnezeu</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-20">20. Sabatul</a>
+                  <a href="#doctrine-20" class="menu-item doctrine-20">20. Sabatul</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-21">21. Administrarea creştină a resurselor vieţii</a>
+                  <a href="#doctrine-21" class="menu-item doctrine-21">21. Administrarea creştină a resurselor vieţii</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-22">22. Comportamentul creştin</a>
+                  <a href="#doctrine-22" class="menu-item doctrine-22">22. Comportamentul creştin</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-23">23. Căsătoria şi familia</a>
+                  <a href="#doctrine-23" class="menu-item doctrine-23">23. Căsătoria şi familia</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-24">24. Lucrarea Domnului Hristos în Sanctuarul ceresc</a>
+                  <a href="#doctrine-24" class="menu-item doctrine-24">24. Lucrarea Domnului Hristos în Sanctuarul ceresc</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-25">25. A Doua Venire a Domnului Hristos</a>
+                  <a href="#doctrine-25" class="menu-item doctrine-25">25. A Doua Venire a Domnului Hristos</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-26">26. Moartea şi învierea</a>
+                  <a href="#doctrine-26" class="menu-item doctrine-26">26. Moartea şi învierea</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-27">27. Mileniul şi sfârşitul păcatului</a>
+                  <a href="#doctrine-27" class="menu-item doctrine-27">27. Mileniul şi sfârşitul păcatului</a>
                 </li>
                 <li class="doctrine-item">
-                  <a href="#" class="menu-item doctrine-28">28. Noul Pământ</a>
+                  <a href="#doctrine-28" class="menu-item doctrine-28">28. Noul Pământ</a>
                 </li>
               </ul>
         </div>
@@ -4169,10 +4170,10 @@
 
         </div>
         <div id="footer-menu">
-          <a class="menu-item home" id="home" href="#" >Acasă</a>
-          <a class="menu-item about" id="about" href="#" >Despre noi</a>
-          <a class="menu-item doctrine" id="doctrine" href="#">Doctrina</a>
-          <a class="menu-item more" id="more" href="#" >Mai multe</a>
+          <a class="menu-item home" id="home" href="#home" >Acasă</a>
+          <a class="menu-item about" id="about" href="#about" >Despre noi</a>
+          <a class="menu-item doctrine" id="doctrine" href="#doctrine">Doctrina</a>
+          <a class="menu-item more" id="more" href="#more" >Mai multe</a>
         </div>
         <div class="copyright">Copyright &copy; August 2020 Biserica Adventistă de Ziua a Șaptea Lunca Ampoiței</div>
 
