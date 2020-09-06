@@ -52,11 +52,7 @@ button {
   outline: none;
   cursor: pointer;
 }
-@media(min-width: 758px) {
-.side-btn:hover {
-  box-shadow: 2px 2px 2px 0  rgba(255, 255, 255, 0.7);
-}
-}
+
 
 p {
   font-size: 17px;
@@ -452,6 +448,18 @@ iframe {
   left: 66%;
 }
 
+.side-btn svg {
+  max-width: 0px;
+  transition-property: max-width;
+  transition-duration: 0.7s;
+  transition-timing-function: linear;
+}
+
+@media(min-width: 758px) {
+  .side-btn:hover svg {
+    max-width: 30px;
+  }
+  }
 
 
 @media (min-width: 500px) {

@@ -100,7 +100,7 @@ console.log( md.os() );
 // Code for PC
 if(md.os() == null){
 // Capturing back on webpage
-// initiate the lasthash as empty array
+// initiate the hash as empty array
 let hashHistory = [];
 
 // Checks if the first # is home
@@ -136,36 +136,75 @@ window.onhashchange = function() {
     console.log(window.location);
   }
 
-  
- }
-
-//  Select item
- function selectItemOnBack(item) {
-  // Initialize Remove all content
-  removeShowOnBack();
-  //Query Select the specific content eg for(home, about, doctrine, more)
-  const content = document.querySelector(`${item}-content`);
-  //Adds the class with the display show
-  content.classList.add("show");
-  menu.style.maxHeight = null;
-  menu.style.transitionDuration = "0.1s";
-}
-
-// Removes all content
-function removeShowOnBack() {
-  for (i = 0; i < showcase.length; i++) {
-    showcase[i].firstElementChild.classList.remove("show");
   }
-}
-}
+
+ }
 // END of code for PC's
+else {
+  let hashHistory = [];
+  
+   if(window.location.hash == '#home'){
+     hashHistory.push('#home');
+    } else {
+     window.location.hash = '#home';
+    }
+    
+    let innerClick = false; 
+    document.body.onclick = () => {
+      innerClick = true;
+    }
+    window.addEventListener('popstate', () => {
 
+      if(innerClick == false){
+          catchBack();
+        } if(innerClick == true) {
+          hashHistory.push(window.location.hash);
+          console.log(hashHistory);
+        }
+        innerClick = false;
+      });
+      
+      function catchBack (){
+        console.log('Popstate works');
+        if(hashHistory.length >= 2) {
+        let item = hashHistory[hashHistory.length - 2];
+        console.log(item);
+        selectItemOnBack(item);
+        hashHistory.pop();
+        }
+      }
+      
+    }
+    
+    
+    
+    //  Select item
+     function selectItemOnBack(item) {
+      // Initialize Remove all content
+      removeShowOnBack();
+      //Query Select the specific content eg for(home, about, doctrine, more)
+      const content = document.querySelector(`${item}-content`);
+      //Adds the class with the display show
+      content.classList.add("show");
+      menu.style.maxHeight = null;
+      menu.style.transitionDuration = "0.5s";
+    }
+    
+    // Removes all content
+    function removeShowOnBack() {
+      for (i = 0; i < showcase.length; i++) {
+        showcase[i].firstElementChild.classList.remove("show");
+      }
+    }
+    
+    
+  } //media query - END
+  // Media Query init and callback
+  var x = window.matchMedia("(min-width: 784px)");
+  mediaQuery(x);
+  x.addListener(mediaQuery);
 
-
-
-} //media query - END
-// Media Query init and callback
-var x = window.matchMedia("(min-width: 784px)");
-mediaQuery(x);
-x.addListener(mediaQuery);
- 
+  console.log(history);
+  history.scrollRestoration = 'manual';
+  
+  
