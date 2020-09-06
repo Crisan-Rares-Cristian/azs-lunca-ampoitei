@@ -10,7 +10,7 @@ var loader = document.getElementById("loader");
 function mediaQuery(x) {
   setTimeout(function () {
     loader.style.display = "none";
-  }, 5000);
+  }, 2000);
 
   // Loops throught the dropBtn HTML Collection
   for (let i = 0; i < dropBtn.length; i++) {
