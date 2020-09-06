@@ -6,18 +6,18 @@ function hideBuletin() {
   document.querySelector('.buletin-informativ').style.display = 'none';
 }
 
-let pageOutForExit = false;
+// let pageOutForExit = false;
 
-document.body.onmouseleave = () => {
-  pageOutForExit = true;
-}
+// document.body.onmouseleave = () => {
+//   pageOutForExit = true;
+// }
 
-document.body.onmouseleave = () => {
-  pageOutForExit = false;
-}
+// document.body.onmouseleave = () => {
+//   pageOutForExit = false;
+// }
 
-window.onhashchange = () => {
-  if(pageOutForExit) {
+// window.onhashchange = () => {
+//   if(pageOutForExit) {
 
-  }
-}
+//   }
+// }
