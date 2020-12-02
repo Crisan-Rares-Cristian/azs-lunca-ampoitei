@@ -1,0 +1,24 @@
+
+1. Global 
+ Accesibility settings: - increase text size
+
+2. improve CSS - use css variables  Eg./* :root {--primary-color: #333} */
+
+
+  - use floats
+
+3. Loading Screen
+
+4. Finish Doctrine
+5. Add photos to about us 
+
+
+
+
+1. Acasă   - showcase with links la despre noi, doctrine, Descoperind Enigmele lui Daniel, 
+           Apocalipsa Actualizată
+
+
+
+
+          

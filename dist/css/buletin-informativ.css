@@ -1,0 +1,214 @@
+/* UC */
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.align-center {
+  text-align: center;
+  width: auto;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+
+.buletin-informativ h1 {
+  color: rgb(2, 121, 233);
+  text-align: center;
+}
+
+/* width */
+.buletin-informativ::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+.buletin-informativ::-webkit-scrollbar-track {
+  background: #d2d9e0;
+  border-radius: 19px;
+}
+
+/* Handle */
+.buletin-informativ::-webkit-scrollbar-thumb {
+  background: rgb(45, 77, 136);
+  border: 1px solid white;
+  border-radius: 19px;
+}
+
+/* Handle on hover */
+.buletin-informativ::-webkit-scrollbar-thumb:hover {
+  background: rgb(40, 121, 175);
+}
+
+.buletin-informativ {
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 95%;
+  width: 98%;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: rgba(31, 34, 39, 0.989);
+  border: 3px solid rgb(31, 59, 112);
+  border-radius: 18px;
+}
+
+/* Exit Button */
+#exit-bi {
+  position: fixed;
+  top: 50px;
+  left: 89%;
+  color: rgb(231, 122, 122);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Utility classes */
+.container-bi {
+  width: 80%;
+  margin: auto;
+}
+
+.azsla_title {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.logo-azsla {
+  margin: 30px;
+  margin-right: 10px; 
+  padding-right: 10px; 
+  width: 70px;
+}
+
+/* .sda-logo-title {
+  display: block;
+} */
+
+.bi-title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+/* Horizontal line */
+.line-1 {
+  outline: none;
+  max-width: 350px;
+  margin: auto;
+  border: 2px #fff solid;
+  margin-bottom: 10px;
+}
+
+.line-2 {
+  outline: none;
+  max-width: 300px;
+  margin: auto;
+  border-width: 1px;
+  border: 1px #fff solid;
+}
+
+/* Events */
+.zoom {
+  margin: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  padding-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+
+.events-calendar {
+  margin: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  padding-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+
+/* Vreau la școală */
+.V-L-S {
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  border-radius: 12px;
+  padding: 30px; 
+  margin-bottom: 30px;
+}
+
+.V-L-S p {
+  margin-bottom: 20px;
+}
+
+/* Program pastoral */
+.program-pastoral .border-round {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+/* Table program pastoral*/
+.buletin-table {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid rgba(204, 204, 204, 0.664);
+  border-collapse: collapse;
+}
+
+.buletin-table  td{
+  border-top: 1px solid rgba(204, 204, 204, 0.664);
+  border-collapse: collapse;
+}
+
+.buletin-table th {
+  border-top: 1px solid rgba(204, 204, 204, 0.664);
+  border-collapse: collapse;
+}
+
+.buletin-table caption {
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgb(88, 125, 230);
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.aiud-text {
+ background-color: rgb(10, 60, 94);
+}
+
+.la-text {
+  background-color: rgb(57, 82, 99);
+}
+
+.teius-text {
+  background-color: rgb(0, 46, 133);
+}
+
+.important-text {
+  background-color: rgb(33, 14, 87);
+}
+
+@media(max-width: 600px) {
+  #exit-bi {
+    left: 83%; 
+  }
+
+  .container-bi {
+    width: 90%;
+  }
+}
