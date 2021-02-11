@@ -1,15 +1,22 @@
 {
   "name": "azs-lunca-ampoitei",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-   "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Crisan Rares-Cristian",
   "license": "ISC",
   "homepage": "https://Blackqwerty.github.io/azș-lunca-ampoiței",
   "dependencies": {
     "gh-pages": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crisan-Rares-Cristian/azs-lunca-ampoitei.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Crisan-Rares-Cristian/azs-lunca-ampoitei/issues"
+  },
+  "description": ""
 }
